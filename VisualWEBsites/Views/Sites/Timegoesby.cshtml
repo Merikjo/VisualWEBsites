@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Timesgoesby";
+}
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+@section scripts{
+
+<style>
+        #myDIV {
+            position: relative;
+            /*top: 180px;*/
+            width: 1000px;
+            height: 1000px;
+            background-color: lightblue;
+            /*border: 1px solid black;*/
+            -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+            animation: mymove 5s infinite;
+            opacity:0.9;
+            padding-top:300px;
+            padding-left:5px;
+        }
+
+    #DIV2 {
+        position: absolute;
+        /*top: 160px;*/
+        /*left: 30px;*/
+        width: 1000px;
+        height: 1000px;
+        background-color: coral;
+        background-image: url('../../Images/jaakiteet.jpg');
+        border: 1px solid black;
+        /*overflow: auto;*/
+        margin: auto;
+        /*max-height:1170px;*/
+        /*width:auto;*/
+        font-weight: bold;
+        /* Chrome, Safari, Opera */
+    }
+        
+</style>
+}
+
+<link href="~/Content/Timegoesby.css" rel="stylesheet" />
+
+<!-- WRAPPER
+  ================================================== -->
+
+<div class="wrapper">
+
+    <div id="DIV2" Style="font-size: 72px;">
+        <h1>
+            Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi *  Kevät  * Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi  *    Kevät      Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi   Kevät   Kesä   Syksy   *   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi   Kevät   Kesä   Syksy Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi   Kevät   Kesä   Syksy   Talvi   Kevät      Kesä   Syksy   Talvi        Kevät   Kesä   Syksy
+            Talvi     Kevät   Kesä   Syksy   Talvi  *    Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi          Kevät   Kesä   Syksy   Talvi         Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi     Kevät   Kesä     Syksy   Talvi     Kevät   Kesä   Syksy      Talvi   Kevät   Kesä   Syksy
+            Talvi     Kevät     Kesä     Syksy     Talvi     *      Kevät   Kesä         Syksy   Talvi   Kevät   Kesä   Syksy
+            Talvi     Kevät      Kesä      Syksy       Talvi         Kevät        Kesä   Syksy      Talvi    Kevät      Kesä   Syksy
+            Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä     Syksy   Talvi          Kevät   Kesä   Syksy
+            Talvi     Kevät     Kesä   Syksy     Talvi   Kevät     Kesä   Syksy         Talvi   Kevät     Kesä      Syksy
+        </h1>
+    </div>
+
+    <div id="myDIV" style="font-size:80px; margin-left:0px">
+        <p>Talvi</p><p>Kevät</p><p>Kesä</p><p>Syksy</p>
+    </div>
+</div><!-- /.wrapper END -->
+
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
+    </footer>
+</div>

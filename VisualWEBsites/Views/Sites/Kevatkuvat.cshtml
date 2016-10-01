@@ -1,0 +1,490 @@
+﻿
+@{
+    ViewBag.Title = "Kevatkuvat";
+}
+
+<h2>Kevätkuvat</h2>
+<link href="~/Content/Kuvat.css" rel="stylesheet" />
+<link href="carousel.css" rel="stylesheet">
+
+@section scripts{
+    <style>
+        div.background {
+            background-image: url('../../Images/jaatausta.jpg');
+            border: 2px solid black;
+            padding-top: 200px;
+        }
+
+
+        div.img {
+            border: 1px solid #ccc;
+        }
+
+            div.img:hover {
+                border: 1px solid #777;
+            }
+
+            div.img img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+}
+
+<!-- WRAPPER
+================================================== -->
+
+<div class="wrapper">
+
+    <!--BACKGROUND-->
+    <div class="background">
+
+        <!--KEVÄTKUVAT-->
+
+        <h2 style="text-align:center">Kevätkuvia</h2>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="toukokuu2014.jpg">
+                    <img src="~/Images/toukokuu2014.jpg" alt="toukokuu2014" width="540" height="960">
+                </a>
+                <div class="desc">Toukokuu 2014.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="toukokuu2014_2.jpg">
+                    <img src="~/Images/toukokuu2014_2.jpg" alt="toukokuu2014_2" width="540" height="960">
+                </a>
+                <div class="desc">Toukokuu2014.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="toukokuunmelojat2014.jpg">
+                    <img src="~/Images/toukokuunmelojat2014.jpg" alt="toukokuunmelojat2014" width="540" height="960">
+                </a>
+                <div class="desc">Melojat Loviisan uimarannalla toukokuussa 2014.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2015.jpg">
+                    <img src="~/Images/maaliskuu2015.jpg" alt="maaliskuu2015" width="540" height="960">
+                </a>
+                <div class="desc">Maaliskuu 2015.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2015_1.jpg">
+                    <img src="~/Images/maaliskuu2015_1.jpg" alt="maaliskuu2015" width="540" height="960">
+                </a>
+                <div class="desc">Maaliskuu 2015.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2015_2.jpg">
+                    <img src="~/Images/maaliskuu2015_2.jpg" alt="maaliskuu2015" width="540" height="960">
+                </a>
+                <div class="desc">Maaliskuu 2015.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2015_3.jpg">
+                    <img src="~/Images/maaliskuu2015_3.jpg" alt="maaliskuu2015" width="960" height="540">
+                </a>
+                <div class="desc">Maaliskuu 2015.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2015_4.jpg">
+                    <img src="~/Images/maaliskuu2015_4.jpg" alt="maaliskuu2015" width="540" height="960">
+                </a>
+                <div class="desc">Maaliskuu 2015.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2015_5.jpg">
+                    <img src="~/Images/maaliskuu2015_5.jpg" alt="maaliskuu2015" width="540" height="960">
+                </a>
+                <div class="desc">Maaliskuu 2015.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="huhtikuu2015.jpg">
+                    <img src="~/Images/huhtikuu2015.jpg" alt="huhtikuu2015" width="540" height="960">
+                </a>
+                <div class="desc">Laiturit odottavat talven jälkeen veneitä huhtikuussa 2015.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="toukokuunmeri2015.jpg">
+                    <img src="~/Images/toukokuunmeri2015.jpg" alt="toukokuunmeri2015" width="540" height="960">
+                </a>
+                <div class="desc">Vappupäivänä 2015 Loviisan merenlahti.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="vappupäivä2015.jpg">
+                    <img src="~/Images/vappupäivä2015.jpg" alt="vappupäivä2015" width="540" height="960">
+                </a>
+                <div class="desc">Vappupäivänä 2015 Loviisan merenlahti.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_1.jpg">
+                    <img src="~/Images/maaliskuu2016_1.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_2.jpg">
+                    <img src="~/Images/maaliskuu2016_2.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_3.jpg">
+                    <img src="~/Images/maaliskuu2016_3.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_4.jpg">
+                    <img src="~/Images/maaliskuu2016_4.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_5.jpg">
+                    <img src="~/Images/maaliskuu2016_5.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_6.jpg">
+                    <img src="~/Images/maaliskuu2016_6.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_7.jpg">
+                    <img src="~/Images/maaliskuu2016_7.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Jäljillä.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_8.jpg">
+                    <img src="~/Images/maaliskuu2016_8.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_9.jpg">
+                    <img src="~/Images/maaliskuu2016_9.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Suojassa.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_10.jpg">
+                    <img src="~/Images/maaliskuu2016_10.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Lumessa.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_11.jpg">
+                    <img src="~/Images/maaliskuu2016_11.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Sumussa.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_12.jpg">
+                    <img src="~/Images/maaliskuu2016_12.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Päivänpaisteessa.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_13.jpg">
+                    <img src="~/Images/maaliskuu2016_13.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Illankajossa.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_15.jpg">
+                    <img src="~/Images/maaliskuu2016_15.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Tikut ja Takut.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_16.jpg">
+                    <img src="~/Images/maaliskuu2016_16.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_17.jpg">
+                    <img src="~/Images/maaliskuu2016_17.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Voimia.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_19.jpg">
+                    <img src="~/Images/maaliskuu2016_19.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Linjassa.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_20.jpg">
+                    <img src="~/Images/maaliskuu2016_20.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Pöntössä.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_21.jpg">
+                    <img src="~/Images/maaliskuu2016_21.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Kivellä.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_23.jpg">
+                    <img src="~/Images/maaliskuu2016_23.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_24.jpg">
+                    <img src="~/Images/maaliskuu2016_24.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_25.jpg">
+                    <img src="~/Images/maaliskuu2016_25.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Eloton.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_26.jpg">
+                    <img src="~/Images/maaliskuu2016_26.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_27.jpg">
+                    <img src="~/Images/maaliskuu2016_27.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_29.jpg">
+                    <img src="~/Images/maaliskuu2016_29.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_30A.jpg">
+                    <img src="~/Images/maaliskuu2016_30A.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_30.jpg">
+                    <img src="~/Images/maaliskuu2016_30.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_31.jpg">
+                    <img src="~/Images/maaliskuu2016_31.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_32.jpg">
+                    <img src="~/Images/maaliskuu2016_32.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_33.jpg">
+                    <img src="~/Images/maaliskuu2016_33.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="maaliskuu2016_34.jpg">
+                    <img src="~/Images/maaliskuu2016_34.jpg" alt="maaliskuu2016" width="600" height="400">
+                </a>
+                <div class="desc">Maaliskuu 2016.</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!--<div style="padding:6px;">-->
+        <!--This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <h4>Resize the browser window to see the effect.</h4>-->
+        <!--KEVÄTKUVAT END-->
+
+    </div>  <!--BACKGROUND END-->
+</div><!-- /.wrapper END -->
+
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
+    </footer>
+</div>

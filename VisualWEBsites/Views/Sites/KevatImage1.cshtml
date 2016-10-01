@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "KevatImage1";
+}
+
+@section scripts{
+<link href="carousel.css" rel="stylesheet">
+
+<style>
+    div.background {
+        background-image: url("../../Images/keväthaapatausta.jpg");
+        border: 2px solid black;     
+        margin: 0 auto;
+        /*opacity:0.9;*/
+        width: 1080px;
+        height: 1920px;
+        
+    }
+
+    div.transbox {
+        margin: 5px; 
+        background-color: #ffffff;/*valkoinen*/
+        border: 1px solid black;
+        opacity: 0.5;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        width: 1065px;
+        height: 1905px;
+    }
+
+    div.transbox2 {
+        margin: 5px;
+        background-color: #b6d8dc;/*vaaleansininen*/
+        border: 1px solid black;
+        opacity: 0.8;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        width: 1052px;
+        height: 1892px;
+    }
+
+    div.transbox p {
+        margin: 25%;
+        font-weight: bold;
+        color: #ffffff;/*valkoinen*/
+        font-size: 500px;
+        width: 1035px;
+        height: 1875px;
+    }
+</style>
+    }
+
+
+    <!--BACKGROUND-->
+    <div class="background">
+        <div class="transbox">
+            <div class="transbox2">
+                
+                    <p>KEVÄT</p>        
+            </div>
+
+            <!--<img src="~/Images/kesälaituri2014.jpg" alt="kevätpyörä" class="img-circle">-->
+        </div>
+    </div><!--BACKGROUND END-->
+
+

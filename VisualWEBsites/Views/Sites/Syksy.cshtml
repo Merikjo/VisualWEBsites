@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Syksy";
+}
+
+@section scripts{
+    <!--syksyn väreilytekstiasetukset-->
+<link href="~/Content/carousel.css" rel="stylesheet" />
+<link href="~/Content/Syksynväreilyä.css" rel="stylesheet" />
+<style>
+    div.background {
+        background-image: url('../../Images/syysvarjo.jpg');
+        border: 2px solid black;
+        /*overflow: auto;*/
+        margin: 0 auto;
+        height: 674px;
+        width: 1198px;
+    }
+
+        div.transbox {
+        margin: 5px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.5;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        height: 659px;
+        width: 1183px;
+        }
+
+            div.transbox p {
+        margin-left: 50%;
+        margin-top: 30%;
+        font-weight: bold;
+        color: #000000;
+        font-size: 74px;
+        text-shadow: 2px 2px 4px #000000;
+        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+        animation: mymove 5s infinite;
+        height: 646px;
+        width: 1170px;
+        }
+
+</style>
+    }
+
+
+    <!--BACKGROUND-->
+    <div class="background">
+        <div class="transbox">
+            <p>Syksyn <br />
+            väreilyä.</p>
+        </div>
+    </div><!--BACKGROUND END-->
+
+
+

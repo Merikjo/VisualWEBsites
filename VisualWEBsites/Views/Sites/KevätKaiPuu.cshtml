@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "KevätKaiPuu";
+}
+
+@section scripts{
+    <style>
+        div.background {
+            background-image: url('../../Images/kevätkaipuu.jpg');
+            border: 2px solid black;
+            margin: 0 auto;
+            /*opacity:0.9;*/
+            width: 1080px;
+            height: 1920px;
+        }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #ffffff; /*valkoinen*/
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1065px;
+            height: 1905px;
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #00cc66; /*v.vihreä*/
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1052px;
+            height: 1892px;
+        }
+                 div.pallot{
+            margin-top:5%;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            filter: drop-shadow(8px 8px 10px #313030);
+            filter: blur(5px);
+            
+        }
+
+        div.col-sm-4{
+            margin-top:5%;
+            text-align: center;
+        }
+
+        div.transbox p {
+            margin: 30%;
+            margin-top: 150%;
+            font-weight: bold;
+            color: #5c666d; /*k.hramaa*/
+            font-size: 200px;
+            width: 1035px;
+            height: 1875px;
+        }
+
+    </style>
+}
+
+
+<!--BACKGROUND-->
+<div class="background">
+   
+    <div class="transbox">
+
+ 
+        <div class="transbox2">
+
+            <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "200px Arial";
+        ctx.fillText("KEVÄT",10,100);
+            </script>
+
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            
+            <div class="pallot">
+
+                <div class="col-sm-4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
+                    <h1 style="text-align:center;color:black;">TALVI</h1>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-sm-4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-sm-4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-sm-4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+
+            </div>
+            <p>KEVÄT</p>
+        </div>
+
+
+
+    </div>
+</div><!--BACKGROUND END-->
+

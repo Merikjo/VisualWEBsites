@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Syyskaisla";
+}
+
+@section scripts{
+
+    <style>
+        div.background {
+            background-image: url('../../Images/kaislat.jpg');
+            border: 2px solid black;
+            margin: 0px;
+            height: 658px;
+            width: 1170px;
+        }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 643px;
+            width: 1155px;
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #b6d8dc; /*t.harmaa*/
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 630px;
+            width: 1142px;
+        }
+
+        div.transbox p {
+            margin-left: 50%;
+            margin-top: 5%;
+            font-weight: bold;
+            color: #393737;
+            font-size: 100px;
+            height: 613px;
+            width: 1125px;
+        }
+    </style>
+}
+
+
+<!--BACKGROUND-->
+<div class="background">
+    <div class="transbox">
+        <div class="transbox2">
+            <p>
+                Talvi<br />
+                Kevät<br />
+                Kesä<br />
+                Syksy
+            </p>
+
+        </div>
+    </div>
+</div><!--BACKGROUND END-->
+
+

@@ -1,0 +1,449 @@
+﻿
+@{
+    ViewBag.Title = "Syksykuvat";
+}
+
+<h2>Syksykuvat</h2>
+
+<link href="~/Content/Kuvat.css" rel="stylesheet" />
+<link href="carousel.css" rel="stylesheet">
+
+@section scripts{
+    <style>
+        div.background {
+            background-image: url('../../Images/jaatausta.jpg');
+            /*border: 2px solid black;*/
+            padding-top: 5px;
+        }
+                
+        div.background2 {
+            background-image: url('../../Images/syksytausta.jpg');
+            border: 2px solid black;
+            padding-top: 250px;
+            margin: 5px;
+        }
+        div.syksykuvat {
+            padding-top:10px;
+        }
+
+        div.img {
+            border: 1px solid #ccc;
+        }
+
+            div.img:hover {
+                border: 1px solid #777;
+            }
+
+            div.img img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+}
+
+
+<!-- WRAPPER
+   ================================================== -->
+
+<div class="wrapper">
+
+    <!--BACKGROUND-->
+    <div class="background2">
+        <div class="background">
+
+
+            <!--SYKSYKUVAT-->
+            <div class="syksykuvat">
+
+                <h2 style="text-align:center">Syksykuvia</h2>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="syyskuu2014.jpg">
+                            <img src="~/Images/syyskuu2014.jpg" alt="syyskuu2014" width="600" height="400">
+                        </a>
+                        <div class="desc">Uimassa.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="syyskuu2014_2.jpg">
+                            <img src="~/Images/syyskuu2014_2.jpg" alt="syyskuu2014" width="600" height="400">
+                        </a>
+                        <div class="desc">"Alaston laituri".</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="syyskuu2014_3.jpg">
+                            <img src="~/Images/syyskuu2014_3.jpg" alt="syyskuu2014" width="600" height="400">
+                        </a>
+                        <div class="desc">Alamäki.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="syyskuun2015soutaja.jpg">
+                            <img src="~/Images/syyskuun2015soutaja.jpg" alt="syyskuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Soutaja.</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015.jpg">
+                            <img src="~/Images/lokakuu2015.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Rannassa.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_2.jpg">
+                            <img src="~/Images/lokakuu2015_2.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Kaislikossa.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_3.jpg">
+                            <img src="~/Images/lokakuu2015_3.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Suolla.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_4.jpg">
+                            <img src="~/Images/lokakuu2015_4.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Laitumella.</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_5.jpg">
+                            <img src="~/Images/lokakuu2015_5.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_6.jpg">
+                            <img src="~/Images/lokakuu2015_6.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_7.jpg">
+                            <img src="~/Images/lokakuu2015_7.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_8.jpg">
+                            <img src="~/Images/lokakuu2015_8.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_9.jpg">
+                            <img src="~/Images/lokakuu2015_9.jpg" alt="lokakuu2015" width="400" height="600">
+                        </a>
+                        <div class="desc">Riisuttu risu.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_10.jpg">
+                            <img src="~/Images/lokakuu2015_10.jpg" alt="lokakuu2015" width="400" height="600">
+                        </a>
+                        <div class="desc">New Life</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_11.jpg">
+                            <img src="~/Images/lokakuu2015_11.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_12.jpg">
+                            <img src="~/Images/lokakuu2015_12.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_13.jpg">
+                            <img src="~/Images/lokakuu2015_13.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_14.jpg">
+                            <img src="~/Images/lokakuu2015_14.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_15.jpg">
+                            <img src="~/Images/lokakuu2015_15.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_16.jpg">
+                            <img src="~/Images/lokakuu2015_16.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_17.jpg">
+                            <img src="~/Images/lokakuu2015_17.jpg" alt="lokakuu2015" width="400" height="600">
+                        </a>
+                        <div class="desc">How Deep Is Your Beauty.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_18.jpg">
+                            <img src="~/Images/lokakuu2015_18.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Repovesi 2015.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_19.jpg">
+                            <img src="~/Images/lokakuu2015_19.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Repovesi 2015.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_20.jpg">
+                            <img src="~/Images/lokakuu2015_20.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Repovesi 2015.</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_21.jpg">
+                            <img src="~/Images/lokakuu2015_21.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_22.jpg">
+                            <img src="~/Images/lokakuu2015_22.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_23.jpg">
+                            <img src="~/Images/lokakuu2015_23.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_24.jpg">
+                            <img src="~/Images/lokakuu2015_24.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_25.jpg">
+                            <img src="~/Images/lokakuu2015_25.jpg" alt="lokakuu2015" width="400" height="600">
+                        </a>
+                        <div class="desc">Kirkossa.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015_26.jpg">
+                            <img src="~/Images/lokakuu2015_26.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">#</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015laavu.jpg">
+                            <img src="~/Images/lokakuu2015laavu.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Loimussa.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="lokakuu2015suo.jpg">
+                            <img src="~/Images/lokakuu2015suo.jpg" alt="lokakuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Suossa.</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="marraskuu2015.jpg">
+                            <img src="~/Images/marraskuu2015.jpg" alt="marraskuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Kauneus on katsojan silmässä.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="marraskuu2015_2.jpg">
+                            <img src="~/Images/marraskuu2015_3.jpg" alt="marraskuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Puistossa.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="marraskuu2015_4.jpg">
+                            <img src="~/Images/marraskuu2015_4.jpg" alt="marraskuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Marraskuun värit.</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="marraskuu2015_5.jpg">
+                            <img src="~/Images/marraskuu2015_5.jpg" alt="marraskuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Yksinäinen.</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="marraskuun2015suppikset.jpg">
+                            <img src="~/Images/marraskuun2015suppikset.jpg" alt="marraskuu2015" width="600" height="400">
+                        </a>
+                        <div class="desc">Marraskuun suppikset.</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!--<div style="padding:6px;">-->
+                <!--This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+                <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+                <h4>Resize the browser window to see the effect.</h4>-->
+
+            </div><!--SYKSYKUVAT END-->
+        </div> <!--background2 END-->
+    </div>  <!--BACKGROUND END-->
+</div><!-- /.wrapper END -->
+
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
+    </footer>
+</div>

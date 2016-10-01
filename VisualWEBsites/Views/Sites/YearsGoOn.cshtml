@@ -1,0 +1,190 @@
+﻿
+@{
+    ViewBag.Title = "YearsGoOn";
+}
+
+@section scripts{
+<a href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.min.css.map">~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.min.css.map</a>
+<link href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+<a href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.css.map">~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.css.map</a>
+<link href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+<a href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap-theme.css.map">~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap-theme.css.map</a>
+<link href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap-theme.css" rel="stylesheet" />
+<a href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap-theme.min.css.map">~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap-theme.min.css.map</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+
+<link href="~/Content/YearsGoOn.css" rel="stylesheet" />
+
+<style>
+
+    div.background {
+        background-image: url('../../Images/jääpeili.jpg');
+        border: 2px solid black;
+        margin-top: 50px;
+        height: 1920px;
+        width: 1920px;
+    }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #000000;/*valkoinen*/
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 1905px;
+            width: 1905px;
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #666666;/*harmaa*/
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 1892px;
+            width: 1892px;
+        }
+
+        /*div.transbox p {
+            margin-left: 45%;
+            margin-top: 50%;
+            font-weight: bold;
+            color: #ffffff;/*valkoinen
+            font-size: 200px;
+            width: 1875px;
+            height: 1875px;
+        }*/
+    
+        div.move {
+            width: 1920px;
+            height: 100px;
+            opacity:0.8;
+            background-color: #000000;/*musta*/
+            font-weight: bold;
+            position: relative;
+            -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+            animation: mymove 8s infinite;
+        }
+        div.move2 {
+            width: 1920px;
+            height: 100px;
+            opacity:0.8;
+            background-color: #000000;/*musta*/
+            font-weight: bold;
+            position: relative;
+            -webkit-animation: mymove2 5s infinite; /* Chrome, Safari, Opera */
+            animation: mymove2 8s infinite;
+        }
+
+         /* Chrome, Safari, Opera */
+        #div1 {
+
+            -webkit-animation-timing-function: linear;
+            font-size:100px;         
+        }
+
+        #div2 {
+            -webkit-animation-timing-function: ease;
+            font-size:100px;
+        }
+
+        #div3 {
+            -webkit-animation-timing-function: ease-in;
+            font-size:100px;
+        }
+
+        #div4 {
+            -webkit-animation-timing-function: ease-out;
+            font-size:100px;
+        }
+
+        #div5 {
+            -webkit-animation-timing-function: ease-in-out;
+            font-size:100px;
+        }
+
+        /* Standard syntax */
+
+        #div1 {
+            animation-timing-function: linear;
+             font-size:100px;
+             color:#ffffff;
+        }
+
+        #div2 {
+            animation-timing-function: ease;
+            font-size:100px;
+            color:#ccffcc;
+        }
+
+        #div3 {
+            animation-timing-function: ease-in;
+            font-size:100px;
+            color:#ffb3d1;
+        }
+
+        #div4 {
+            animation-timing-function: ease-out;
+            font-size:100px;
+            color:#ff7733;
+        }
+
+        #div5 {
+            animation-timing-function: ease-in-out;
+            font-size:100px;
+            color:#b3ffff;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+
+</style>
+}
+
+    <!--BACKGROUND-->
+    <div class="background">
+    <div class="transbox">
+        <div class="transbox2">
+            <br />
+            <div class="clearfix">
+                <div id="div1" class="move">Talvi....Talvi....Talvi...Talvi...Talvi....Talvi....</div>
+                <br />
+                <div id="div1" class="move2">Talvi....Talvi....Talvi...Talvi...Talvi....Talvi..</div>
+                <br />
+                <div id="div2" class="move">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.......</div>
+                <br />
+                <div id="div2" class="move2">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.....</div>
+                <br />
+                <div id="div3" class="move">Kesä....Kesä......Kesä.....Kesä......Kesä...Kesä....</div>
+                <br />
+                <div id="div3" class="move2">Kesä....Kesä......Kesä.....Kesä....Kesä...Kesä....</div>
+                <br />
+                <div id="div4" class="move">Syksy....Syksy...Syksy........Syksy.....Syksy.......</div>
+                <br />
+                <div id="div4" class="move2">Syksy....Syksy...Syksy........Syksy.....Syksy.....</div>
+                <br />
+                <div id="div5" class="move">Talvi........Talvi........Talvi....Talvi.......Talvi</div>
+                <br />
+                <div id="div5" class="move2">Talvi........Talvi........Talvi....Talvi.....Talvi</div>
+                <br />
+                <div id="div2" class="move">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.......</div>
+                <br />
+                <div id="div2" class="move2">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.....</div>
+                <br />
+                <div id="div3" class="move">Kesä....Kesä......Kesä.....Kesä......Kesä...Kesä....</div>
+                <br />
+                <div id="div3" class="move2">Kesä....Kesä......Kesä.....Kesä....Kesä...Kesä....</div>
+                <br />
+                <div id="div4" class="move">Syksy....Syksy...Syksy........Syksy.....Syksy.......</div>
+                <br />
+                <div id="div4" class="move2">Syksy....Syksy...Syksy........Syksy.....Syksy.....</div>
+                <br />
+
+            </div></div>     
+    </div>
+    </div><!-- /.background END -->
+
+
+

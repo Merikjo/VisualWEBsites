@@ -1,44 +1,180 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="fi - fi">
+
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For intranet testing only, remove in production. -->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <script src="~/Content/carousel.js"></script>
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+
+    <script src="modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    <title>@ViewBag.Title - Maisemakuvia</title>
+
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="Index.cshtml" rel="index">
+    <link href="Talvi.cshtml" rel="Talvi">
+    <link href="Kesa.cshtml" rel="Kesä">
+    <link href="Ajankulua.cshtml" rel="Ajankulua">
+    <link href="YearsGoOn.cshtml" rel="YearsGoOn">
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</body>
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        }({
+            instrumentationKey:"1a0213e6-e58b-46ec-83e0-4489b56725a5"
+        });
+
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    </head>
+
+    <body>
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Maisemakuvia</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+
+                            <li class="dropdown">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Maisemakuvia", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("Talvi", "Talvi", "Sivu")</li>
+                                    <li>@Html.ActionLink("Kevät", "Kevät", "Sivu")</li>
+                                    <li>@Html.ActionLink("Kesä", "Kesä", "Sivu")</li>
+                                    <li>@Html.ActionLink("Syksy", "Syksy", "Sivu")</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Maisemointia</li>
+                                    <li>@Html.ActionLink("Ajankulua", "Ajankulua", "Sivu")</li>
+                                    <li>@Html.ActionLink("Time goes by...", "Timegoesby", "Sivu")</li>
+                                    <li>@Html.ActionLink("YearsGoOn", "YearsGoOn", "Sivu")</li>
+                                    <li>@Html.ActionLink("TalviImage1", "TalviImage1", "Sivu")</li>
+                                    <li>@Html.ActionLink("TalviImage2", "TalviImage2", "Sivu")</li>
+                                    <li>@Html.ActionLink("TalviImage3", "TalviImage3", "Sivu")</li>
+                                    <li>@Html.ActionLink("KevätImage1", "KevatImage1", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäImage1", "KesaImage1", "Sivu")</li>
+                                    <li>@Html.ActionLink("Vuodenaika", "Vuodenaika", "Sivu")</li>
+                                    <li>@Html.ActionLink("Vuodenaika2", "Vuodenaika2", "Sivu")</li>
+                                    <li>@Html.ActionLink("Vuodenaika3", "Vuodenaika3", "Sivu")</li>
+                                    <li>@Html.ActionLink("RautaAika", "RautaAika", "Sivu")</li>
+                                    <li>@Html.ActionLink("Ketju", "Ketju", "Sivu")</li>
+                                    <li>@Html.ActionLink("AikaTapit", "AikaTapit", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäKaisla", "KesäKaisla", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäVuokot", "KesäVuokot", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäVuokot2", "KesäVuokot2", "Sivu")</li>
+                                    <li>@Html.ActionLink("Voimala", "Voimala", "Sivu")</li>
+                                    <li>@Html.ActionLink("KevätHeijaste", "KevätHeijaste", "Sivu")</li>
+                                    <li>@Html.ActionLink("KevätHeijaste2", "KevätHeijaste2", "Sivu")</li>
+                                    <li>@Html.ActionLink("KevätHeijaste3", "KevätHeijaste3", "Sivu")</li>
+                                    <li>@Html.ActionLink("KevätHeijaste4", "KevätHeijaste4", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäHaituva", "KesäHaituva", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäHaituva2", "KesäHaituva2", "Sivu")</li>
+                                    <li>@Html.ActionLink("KesäHaituva3", "KesäHaituva3", "Sivu")</li>
+                                    <li>@Html.ActionLink("Ikkuna", "Ikkuna", "Sivu")</li>
+                                    <li>@Html.ActionLink("TyöPaja", "TyöPaja", "Sivu")</li>
+                                    <li>@Html.ActionLink("OppositeSite", "OppositeSite", "Sivu")</li>
+                                    <li>@Html.ActionLink("VesiKivi", "VesiKivi", "Sivu")</li>
+                                    <li>@Html.ActionLink("Syyskaisla", "Syyskaisla", "Sivu")</li>
+                                    <li>@Html.ActionLink("Ketjussa", "Ketjussa", "Sivu")</li>
+                                    <li>@Html.ActionLink("Ketjutus", "Ketjutus", "Sivu")</li>
+                                    <li>@Html.ActionLink("Älypuhelin", "Älypuhelin", "Sivu")</li>
+                                    <li>@Html.ActionLink("KevätKaiPuu", "KevätKaiPuu", "Sivu")</li>
+
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Luontokuvia</li>
+                                    <li>@Html.ActionLink("Talvikuvat", "Talvikuvat", "Sivu")</li>
+                                    <li>@Html.ActionLink("Kevätkuvat", "Kevatkuvat", "Sivu")</li>
+                                    <li>@Html.ActionLink("Kesäkuvat", "Kesakuvat", "Sivu")</li>
+                                    <li>@Html.ActionLink("Syksykuvat", "Syksykuvat", "Sivu")</li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--navbar-collapse collapse END-->
+                </div><!--container END-->
+            </nav>
+        </div><!--navbar-wrapper END-->
+
+
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
+            </footer>
+        </div>
+
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/docs/assets/js/vendor/jquery.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>

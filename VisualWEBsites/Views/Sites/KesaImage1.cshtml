@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "KesaImage1";
+}
+
+@section scripts{
+
+<link href="~/Content/carousel.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+    <style>
+        div.background {
+            background-image: url('../../Images/hiekka.jpg');
+            border: 2px solid black;
+            width: 1170px;
+            
+        }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1155px;
+            
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #b6d8dc;
+            border: 1px solid black;
+            opacity: 0.9;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1142px;
+        }
+
+        div.transbox p {
+            margin: 25%;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 500px;
+            width: 1125px;
+            padding-left:2px;
+            padding-right:2px;
+        }
+    </style>
+}
+
+
+
+    <!--BACKGROUND-->
+    <div class="background">
+        <div class="transbox">
+            <div class="transbox2">
+                <p>KESÄ</p>
+            </div>
+        </div>
+    </div><!--BACKGROUND END-->
+
+
+

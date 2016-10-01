@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "TyöPaja";
+}
+@section scripts{
+
+    <style>
+        div.background {
+            background-image: url('../../Images/työkalut.jpg');
+            border: 2px solid black;
+            margin: 0px;
+            height: 1080px;
+            width: 1170px;
+            opacity: 0.5;
+        }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #e6e0e0;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 1065px;
+            width: 1155px;
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #a3c4bc;
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 1052px;
+            width: 1142px;
+        }
+
+        div.transbox p {
+            margin-left: 50%;
+            margin-top: 15%;
+            font-weight: bold;
+            color: #204537;
+            font-size: 150px;
+            height: 1035px;
+            width: 1125px;
+        }
+    </style>
+}
+
+
+<!--BACKGROUND-->
+<div class="background">
+    <div class="transbox">
+        <div class="transbox2">
+            <p>
+                Talvi<br />
+                Kevät<br />
+                Kesä<br />
+                Syksy
+            </p>
+
+        </div>
+    </div>
+</div><!--BACKGROUND END-->
+

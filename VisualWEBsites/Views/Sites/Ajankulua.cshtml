@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "Ajankulua";
+     }
+
+@section scripts{
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="jquery-1.12.1.js"></script>
+
+<style>
+    div.background {
+        background-image: url('../../Images/jaakiteet.jpg');
+        border: 2px solid black;
+    }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.3;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            /*position:relative;*/
+        }
+
+            div.transbox p {
+                /*margin: 50%;*/
+                font-weight: bold;
+                color: #000000;
+                font-size: 74px;
+                /*max-height:600px;*/
+                /*display: flex;*/
+                align-content:space-around;
+                position:relative;
+            }
+
+        #myDIV {
+                /*border: 1px solid black;*/
+                -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+                animation: mymove 10s infinite;
+            }
+        
+                div.transbox p {
+                /*margin: 50%;*/
+                font-weight: bold;
+                color: #000000;
+                font-size: 74px;
+                /*max-height:600px;*/
+                /*display: flex;*/
+                align-content:space-around;
+            }
+
+</style>
+    }
+<link href="~/Content/Ajankulua.css" rel="stylesheet" />
+
+
+<!-- WRAPPER
+================================================== -->
+    <div class="wrapper">
+        <div class="background">
+            <div class="transbox">
+
+                <div id="myDIV" Style="font-size: 36px;">
+                    Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi   Kevät   Kesä   Syksy <p>Talvi Kevät Kesä Syksy</p>   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi     Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi     Kevät   Kesä     Syksy   Talvi     Kevät   Kesä   Syksy      Talvi   Kevät   Kesä   Syksy
+                    Talvi     Kevät     Kesä     Syksy     Talvi     Kevät   Kesä         Syksy   Talvi   Kevät   Kesä   Syksy
+                    Talvi     Kevät      Kesä      Syksy       Talvi         Kevät      Kesä   Syksy      Talvi    Kevät      Kesä   Syksy
+                    Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä     Syksy   Talvi          Kevät   Kesä   Syksy
+                    Talvi     Kevät     Kesä   Syksy     Talvi   Kevät     Kesä   Syksy     Talvi   Kevät     Kesä      Syksy
+                    <div id="div1">Talvi Kevät></div>
+                </div>
+            </div><!-- /.transbox END -->
+        </div><!-- /.background END -->
+    </div><!-- /.wrapper END -->
+
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
