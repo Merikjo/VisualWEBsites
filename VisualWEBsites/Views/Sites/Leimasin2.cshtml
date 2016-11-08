@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Leimasin2";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=checkAuth" gapi_processed="true"></script>
+
+
+
+    <style>
+         div.background {
+            background-image: url('../../images/leimaseina.jpg');
+            border: 2px solid black;
+            margin: 0px;
+            width:1080px;
+            height: 1920px;
+        }
+         canvas {
+              background-image: url('../../images/leimaseina.jpg');
+            /*position: absolute;
+            margin-top: 50%;
+            margin-bottom: 50%;
+            margin-left: 50%;
+            margin-right: 50%;*/
+            /*opacity: 0.9;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            /*text-align: center;
+            width:1080px;
+            height: 1920px;*/
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+
+        }
+       </style>
+
+<body onload="startGame()">
+   
+        <div class="canvas">
+            <script>
+                var myGamePiece;
+                var myBackground;
+
+                function startGame() {
+                    myGamePiece = new component(500, 500, "rgba(108, 147, 147, 0.6)", 500, 500);
+                    myGamePiece = new component(500, 500, '../../images/leimaseina.jpg', 500, 500, "image");
+                    myBackground = new component(656, 270, "leimaseina.jpg", 0, 0, "image");
+
+                    myGameArea.start();
+                }
+
+                var myGameArea = {
+                    canvas: document.createElement("canvas"),
+
+                    start: function () {
+                        this.canvas.width = 1080;
+                        this.canvas.height = 1920;
+                        this.context = this.canvas.getContext("2d");
+                        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                        this.frameNo = 0;
+                        this.interval = setInterval(updateGameArea, 20);
+                    },
+                    stop: function () {
+                        clearInterval(this.interval);
+                    },
+                    clear: function () {
+                        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    }
+                }
+
+                function component(width, height, color, x, y, type) {
+                    this.type = type;
+                    if (type == "image") {
+                        this.image = new Image();
+                        this.image.src = color;
+                    }
+                    this.width = width;
+                    this.height = height;
+                    this.angle = 0;
+                    this.x = x;
+                    this.y = y;
+                    this.update = function () {
+                        ctx = myGameArea.context;
+                        if (type == "image") {
+                            ctx.drawImage(this.image,
+                            this.x,
+                            this.y,
+                            this.width, this.height);
+                        }
+                            ctx.save();
+                            ctx.translate(this.x, this.y);
+                            ctx.rotate(this.angle);
+                            ctx.fillStyle = color;
+                            ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
+                            ctx.restore();
+                        }
+                    }
+               
+
+                function updateGameArea() {
+                    myGameArea.clear();
+                    myGamePiece.angle += 1 * Math.PI / 180;
+                    myGamePiece.update();
+                }
+
+
+
+            </script>
+        </div>
+  
+
+</body>

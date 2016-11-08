@@ -45,6 +45,10 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult Timegoesby2()
+        {
+            return View();
+        }
 
         public ActionResult TalviImage1()
         {
@@ -179,6 +183,30 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult VesiKiviPyorre()
+        {
+            return View();
+        }
+        public ActionResult VesiKiviPyorre2()
+        {
+            return View();
+        }
+        public ActionResult JaaPyorre()
+        {
+            return View();
+        }
+        public ActionResult JaaPyorre2()
+        {
+            return View();
+        }
+        public ActionResult Leimasin()
+        {
+            return View();
+        }
+        public ActionResult Leimasin2()
+        {
+            return View();
+        }
         public ActionResult Syyskaisla()
         {
             return View();
@@ -199,7 +227,14 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult Photos()
+        {
+            return View();
+        }
+        public ActionResult Move()
+        {
+            return View();
+        }
     }
 }
-    }
-}
+    

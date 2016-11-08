@@ -1,0 +1,11 @@
+﻿
+  /* Chrome, Safari, Opera */
+                @-webkit-keyframes mymove {
+                5% {word-spacing: 100px;}
+            }
+
+         /* Standard syntax */
+                @keyframes mymove {
+                5% {word-spacing: 100px;}
+        }
+     

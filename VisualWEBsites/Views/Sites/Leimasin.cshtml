@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "Leimasin";
+}
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+
+@section scripts{
+
+    <style>
+         div.background {
+            background-image: url('../../images/leimaseina.jpg');
+            border: 2px solid black;
+            margin: 0px;
+            width:1080px;
+            height: 1920px;
+        }
+         canvas {
+            background-image: url('../../Images/leimaseina.jpg');
+            /*position: absolute;
+            margin-top: 50%;
+            margin-bottom: 50%;
+            margin-left: 50%;
+            margin-right: 50%;*/
+            opacity: 0.9;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            text-align: center;
+            width:1080px;
+            height: 1920px;
+        }
+       
+
+        div.transbox {
+            margin: 5px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1065px;
+            height: 1905px;
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #b6d8dc; /*t.harmaa*/
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1052px;
+            height: 1892px;
+        }
+
+        div.transbox p {
+            margin-left: 5%;
+            margin-top: 5%;
+            font-weight: bold;
+            color: #393737;
+            font-size: 100px;
+            width: 1035px;
+            height: 1875px;
+        }
+       
+         div.col-sm-4 {
+            position: absolute;
+            margin-top: 50%;
+            margin-bottom: 50%;
+            margin-left: 50%;
+            margin-right: 50%;
+            /*text-align: center;*/
+
+        }
+          div.teksti {
+            position: absolute; /*rivittää tekstin ruutuun*/         
+            /*width: 100%; */         
+            font-size: 60px;
+            font-weight: bold;
+            /*padding-left:5%;*/    
+            text-align: justify;
+                    
+        }
+          .img-circle {
+            /*position: absolute;*/
+            margin-top: 50%;
+            margin-bottom: 50%;
+            margin-left: 50%;
+            /*margin-right: 50%;*/
+            border-radius:50%;
+          }
+
+    </style>
+}
+
+<body onload="startGame()">
+
+    <script>
+        var myGamePiece;
+        var myBackground;
+        
+function startGame() {
+    myGamePiece = new component(500, 500, src="~/Images/leimaseina.jpg", 500, 500, "image");
+    myBackground = new component(656, 270, "leimaseina.jpg", 0, 0, "image");
+
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas: document.createElement("canvas"),
+
+    start: function () {
+      
+        this.canvas.width = 1080;
+        this.canvas.height = 1920;
+        this.context = this.canvas.getContext("2d");
+        
+
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    stop : function() {
+        clearInterval(this.interval);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y, type, ctx) {
+    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+    this.type = type;
+    if (type == "image") {
+        this.image = new Image();
+        this.image.src = Image;
+    }
+
+    this.width = width;
+    this.height = height;
+    this.angle = 0;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.angle);
+        ctx.fillStyle = Image;
+        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
+        ctx.restore();
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.angle += 1 * Math.PI / 180;
+    myGamePiece.update();
+}
+
+    </script>
+    
+    <!--BACKGROUND-->
+    <div class="background">
+    <div class="canvas"> 
+            <div class="transbox2">
+
+                
+                <div id="myDIVpyorre3">
+                    <img class="img-circle" src="~/images/leimaseina.jpg" alt="leimaseina" width="500" height="500"><text fill="#ffffff" font-size="45" font-family="verdana" x="200" y="90">stamp</text></a>
+                </div>
+         
+         
+            </div>
+        </div>
+    </div><!--BACKGROUND END-->
+
+    </body>

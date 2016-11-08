@@ -1,0 +1,15 @@
+﻿body {
+}
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+            50% {
+                opacity: 0.9;
+            }
+        }
+
+        /* Standard syntax */
+@keyframes mymove {
+            50% {
+                opacity: 0.3;
+            }
+        }

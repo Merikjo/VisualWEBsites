@@ -26,5 +26,10 @@ namespace VisualWEBsites.Controllers
 
             return View();
         }
+        // GET: Talvi
+        public ActionResult Talvi()
+        {
+            return View();
+        }
     }
 }

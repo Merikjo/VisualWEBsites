@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "VisualWEBsites";
 }
 
 
@@ -7,6 +7,9 @@
     <script src="~/Content/carousel.js"></script>
     <link href="~/Content/carousel.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/carousel.js"></script>
+    
+
 }
 
 <!-- WRAPPER
@@ -34,7 +37,7 @@
                             <h1>Talvimaisemia</h1>
                             <p>Rentoudu ja nauti näistä upeista talvimaisemista.</p>
                             <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
-                            <p><a class="btn btn-lg btn-primary" href="index1.html" target="_blank" role="button">Talvikuvia</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="Talvikuvat.cshtml" target="_blank" role="button">Talvikuvia</a></p>
                         </div>
                     </div>
                 </div>
@@ -67,7 +70,7 @@
                         <div class="carousel-caption">
                             <h1>Syksymaisemia</h1>
                             <p>Syksyllä herää odotuksen kaipuu menneeseen ja tulevaan kesään.</p>
-                            <p><a class="btn btn-lg btn-primary" href="index4.html" target="_blank" role="button">Syksykuvia</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="Syksykuvat.html" target="_blank" role="button">Syksykuvia</a></p>
                         </div>
                     </div>
                 </div>
@@ -95,8 +98,9 @@
                     <img class="img-circle" src="~/Images/kevät.jpg" alt="kevätkuva" width="140" height="140">
                     <h2>Kevät</h2>
                     <p>Alkukeväästä luonto kuoriutuu talvivaipastaan. Luonto on paljas ja karu, syli täynnä kesän odotusta.</p>
-                    <p><a class="btn btn-default" href="index2.html" target="_blank" role="button">Kevätkuvia &raquo;</a></p>
+                    <p><a class="btn btn-default" href="~/Views/Sites/Kevatkuvat.cshtml" target="_blank" role="button">Kevätkuvia &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
+                
 
                 <div class="col-sm-4">
                     <img class="img-circle" src="~/Images/kesä.jpg" alt="kesäkuva" width="140" height="140">
