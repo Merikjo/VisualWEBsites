@@ -586,6 +586,7 @@
     <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %285%29.pubxml" />
     <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\VisualWEBsites.pubxml" />
     <None Include="Properties\PublishProfiles\VisualWEBsites2 - Web Deploy.pubxml" />
@@ -752,7 +753,6 @@
     <Content Include="Images\vappupäivä2015.jpg" />
     <Content Include="Images\Voimala.jpg" />
     <Content Include="Images\WP_20160402_059.jpg" />
-    <Content Include="Images\WP_20160414_011.jpg" />
     <Content Include="Images\WP_20160501_001.jpg" />
     <Content Include="Images\WP_20160529_017.jpg" />
     <Content Include="Images\WP_20160529_018.jpg" />
@@ -775,7 +775,6 @@
     <Content Include="Images\WP_20160708_19_15_33_Pro_LI.jpg" />
     <Content Include="Images\WP_20160709_13_45_31_Pro_LI.jpg" />
     <Content Include="Images\WP_20160709_13_54_05_Pro_LI.jpg" />
-    <Content Include="Images\WP_20160709_14_01_55_Pro_LI.jpg" />
     <Content Include="Images\WP_20160718_16_42_04_Pro_LI.jpg" />
     <Content Include="Images\WP_20160718_16_43_05_Pro_LI.jpg" />
     <Content Include="Images\WP_20160718_16_43_32_Pro_LI.jpg" />
