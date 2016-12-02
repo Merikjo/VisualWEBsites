@@ -591,6 +591,7 @@
     <None Include="Properties\PublishProfiles\VisualWEBsites2 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Images\elokuunkuu2014.jpg" />
+    <Content Include="Images\FishMovie.mp4" />
     <Content Include="Images\haituvapallo.jpg" />
     <Content Include="Images\haituvapalloblack.jpg" />
     <Content Include="Images\haka.jpg" />
@@ -640,6 +641,7 @@
     <Content Include="Images\kivikolmio.jpg" />
     <Content Include="Images\kivivesi.jpg" />
     <Content Include="Images\kivivesi2.jpg" />
+    <Content Include="Images\kivivesi3.jpg" />
     <Content Include="Images\käpy.jpg" />
     <Content Include="Images\laivat.jpg" />
     <Content Include="Images\laivatblack.jpg" />
@@ -892,6 +894,11 @@
     <Content Include="Views\Sites\JaaPyorre2.cshtml" />
     <Content Include="Views\Sites\Leimasin.cshtml" />
     <Content Include="Views\Sites\Leimasin2.cshtml" />
+    <Content Include="Views\Sites\KevatHeijastePyorre.cshtml" />
+    <Content Include="Views\Sites\KesaPyora.cshtml" />
+    <Content Include="Views\Sites\FishMovie.cshtml" />
+    <Content Include="Views\Sites\Leimasin3.cshtml" />
+    <Content Include="Views\Sites\ArtWall.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

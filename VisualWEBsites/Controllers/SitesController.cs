@@ -155,6 +155,10 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult KevatHeijastePyorre()
+        {
+            return View();
+        }
         public ActionResult KesäHaituva()
         {
             return View();
@@ -199,11 +203,23 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult KesaPyora()
+        {
+            return View();
+        }
         public ActionResult Leimasin()
         {
             return View();
         }
         public ActionResult Leimasin2()
+        {
+            return View();
+        }
+        public ActionResult Leimasin3()
+        {
+            return View();
+        }
+        public ActionResult ArtWall()
         {
             return View();
         }
@@ -232,6 +248,10 @@ namespace VisualWEBsites.Controllers
             return View();
         }
         public ActionResult Move()
+        {
+            return View();
+        }
+        public ActionResult FishMovie()
         {
             return View();
         }

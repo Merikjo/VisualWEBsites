@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Leimasin3";
+}
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+
+@section scripts{
+
+    <style>
+         div.background {
+            background-image: url('../../images/leimaseina.jpg');
+            border: 2px solid black;
+            margin: 0px;
+            width:1080px;
+            height: 1920px;
+        }
+        div.canvas {
+            margin: 5px;
+            background-color: #ffffff;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            text-align: center;
+            width:1065px;
+            height: 1905px;
+        }
+       
+        div.transbox2 {
+            margin: 5px;     
+            background-color: #b6d8dc; /*t.harmaa*/
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1052px;
+            height: 1892px;       
+        }
+
+        div.transbox3 {                 
+            margin-top: 50%;
+        }
+
+          div.img-circle {          
+            border-radius:50%;     
+            width:800px;
+            height:800px;                
+}
+    </style>
+
+<style>
+#DIV1 {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+
+#DIV2original {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px dashed grey;
+    background-color: lightgrey;
+    opacity: 0.5;
+}
+</style>
+
+}
+
+<body>
+    
+
+    <!--BACKGROUND-->
+<div class="background">
+    <div class="canvas">
+        <div class="transbox2">
+            <text fill="#ffffff" font-size="100" font-family="verdana" x="200" y="90">
+                STAMP
+            </text>
+            <div class="transbox3">
+                <div id="myDIVpyorre3"><img class="img-circle" src="~/images/leimaseina.jpg" alt="leimaseina">DIV2
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><!--BACKGROUND END-->
+
+
+    <div id="DIV1">
+        DIV1
+        <div id="DIV2original">DIV2</div> <div id="DIV2">DIV2</div>
+    </div>
+
+</body>

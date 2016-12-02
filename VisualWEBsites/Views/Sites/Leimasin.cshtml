@@ -23,39 +23,28 @@
             width:1080px;
             height: 1920px;
         }
-         canvas {
-            background-image: url('../../Images/leimaseina.jpg');
-            /*position: absolute;
-            margin-top: 50%;
-            margin-bottom: 50%;
-            margin-left: 50%;
-            margin-right: 50%;*/
-            opacity: 0.9;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            text-align: center;
-            width:1080px;
-            height: 1920px;
-        }
-       
-
-        div.transbox {
+        div.canvas {
             margin: 5px;
             background-color: #ffffff;
-            border: 1px solid black;
             opacity: 0.5;
             filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1065px;
+            text-align: center;
+            width:1065px;
             height: 1905px;
         }
-
+       
         div.transbox2 {
-            margin: 5px;
+            margin: 5px;     
             background-color: #b6d8dc; /*t.harmaa*/
             border: 1px solid black;
             opacity: 0.8;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             width: 1052px;
-            height: 1892px;
+            height: 1892px;       
+        }
+
+        div.transbox3 {                 
+            margin-top: 50%;
         }
 
         div.transbox p {
@@ -75,7 +64,6 @@
             margin-left: 50%;
             margin-right: 50%;
             /*text-align: center;*/
-
         }
           div.teksti {
             position: absolute; /*rivittää tekstin ruutuun*/         
@@ -83,18 +71,13 @@
             font-size: 60px;
             font-weight: bold;
             /*padding-left:5%;*/    
-            text-align: justify;
-                    
+            text-align: justify;                  
         }
-          .img-circle {
-            /*position: absolute;*/
-            margin-top: 50%;
-            margin-bottom: 50%;
-            margin-left: 50%;
-            /*margin-right: 50%;*/
-            border-radius:50%;
-          }
-
+          .img-circle {          
+            border-radius:50%;     
+            width:800px;
+            height:800px;                
+}
     </style>
 }
 
@@ -164,20 +147,17 @@ function updateGameArea() {
 }
 
     </script>
-    
-    <!--BACKGROUND-->
-    <div class="background">
-    <div class="canvas"> 
-            <div class="transbox2">
 
-                
-                <div id="myDIVpyorre3">
-                    <img class="img-circle" src="~/images/leimaseina.jpg" alt="leimaseina" width="500" height="500"><text fill="#ffffff" font-size="45" font-family="verdana" x="200" y="90">stamp</text></a>
+    <!--BACKGROUND-->
+<div class="background">
+    <div class="canvas"> 
+        <div class="transbox2">
+            <div class="transbox3">
+                <div id="myDIVpyorre3"><img class="img-circle" src="~/images/leimaseina.jpg" alt="leimaseina">@*<text fill="#ffffff" font-size="45" font-family="verdana" x="200" y="90">stamp</text>*@
                 </div>
-         
-         
             </div>
         </div>
-    </div><!--BACKGROUND END-->
+    </div>
+</div><!--BACKGROUND END-->
 
-    </body>
+</body>

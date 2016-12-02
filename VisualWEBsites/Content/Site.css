@@ -47,6 +47,7 @@ textarea {
     /*color: black;*/
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
+     transform-origin: 50% 50%; 
 }
 
 /* Chrome, Safari, Opera */
@@ -68,6 +69,7 @@ textarea {
     margin: auto;
     -webkit-animation: mymove1 10s infinite; /* Chrome, Safari, Opera */
     animation: mymove1 10s infinite;
+     transform-origin: 50% 50%; 
 }
 
 /* Chrome, Safari, Opera */
@@ -89,6 +91,7 @@ textarea {
     margin: auto;
     -webkit-animation: mymove2 7s infinite; /* Chrome, Safari, Opera */
     animation: mymove2 7s infinite;
+     transform-origin: 50% 50%; 
 }
 
 /* Chrome, Safari, Opera */
@@ -105,6 +108,7 @@ textarea {
     margin: auto;
     -webkit-animation: mymove3 4s infinite; /* Chrome, Safari, Opera */
     animation: mymove3 4s infinite;
+     transform-origin: 0% 0%; 
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove3 {
@@ -123,17 +127,14 @@ textarea {
 }
 
 /*VesiKiviPyorre asetukset*/
-#myDIVpyorre {
-    margin: auto;
-    /*border: 1px solid black;*/
-    /*width: 200px;
-    height: 200px;*/
-    /*background-color: cadetblue;*/
-    color: white;
+#myDIVpyorre {  
     -webkit-animation: mymove4 80s infinite; /* Chrome, Safari, Opera */
     animation: mymove4 80s infinite;
     animation-delay: 0s;
-    animation-timing-function: linear;   
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+    -webkit-animation: mymove4 80s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove4 80s linear infinite;    
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove4 {
@@ -144,17 +145,14 @@ textarea {
     100% {transform: rotate(14400deg);}
 }
 
-#myDIVpyorre1 {
-    margin: auto;
-    /*border: 1px solid black;*/
-    /*width: 200px;
-    height: 200px;*/
-    /*background-color: cadetblue;*/
-    color: white;
+#myDIVpyorre1 {    
     -webkit-animation: mymove5 120s infinite; /* Chrome, Safari, Opera */
     animation: mymove5 120s infinite;
     animation-delay: 0s;
-    animation-timing-function: linear;   
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+    -webkit-animation: mymove5 120s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove5 120s linear infinite;    
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove5 {
@@ -166,16 +164,13 @@ textarea {
 }
 
 #myDIVpyorre2 {
-    margin: auto;
-    /*border: 1px solid black;*/
-    /*width: 200px;
-    height: 200px;*/
-    /*background-color: cadetblue;*/
-    color: white;
     -webkit-animation: mymove6 60s infinite; /* Chrome, Safari, Opera */
     animation: mymove6 60s infinite;
     animation-delay: 0s;
-    animation-timing-function: linear;   
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+     -webkit-animation: mymove6 60s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove6 60s linear infinite; 
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove6 {
@@ -185,20 +180,66 @@ textarea {
 @keyframes mymove6 {
     100% {transform: rotate(7200deg);}
 }
-#myDIVpyorre3 {
-    
-    -webkit-animation: mymove7 480s infinite; /* Chrome, Safari, Opera */
-    animation: mymove7 480s infinite;
+#myDIVpyorre3 {  
     animation-delay: 0s;
     animation-timing-function: linear;
-    
-   
+    transform-origin: 50% 50%;
+    animation: mymove7 480s linear infinite;
+     -webkit-animation: mymove7 480s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove7 480s linear infinite;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove7 {
     100% {-webkit-transform: rotate(14400deg);}
 }
 /* Standard syntax */
-@keyframes mymove7 {
-    100% {transform: rotate(14400deg);}
+@keyframes mymove7 {    
+    100% {transform: rotate(14400deg);}   
+}
+
+#myDIVpyorre4 {  
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    /*transform-origin: 50% 50%;*/
+    animation: mymove8 480s linear infinite;
+     -webkit-animation: mymove8 480s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove8 480s linear infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove8 {
+    100% {-webkit-transform: rotate(14400deg);}
+}
+/* Standard syntax */
+@keyframes mymove8 {    
+    100% {transform: rotate(14400deg);}   
+}
+
+
+
+#DIV2 {
+    background-image:  url('../../images/seinä.jpg');
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: coral;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    /*transform-origin: 50% 50%;*/
+    animation: mymove9 480s linear infinite;
+     -webkit-animation: mymove8 480s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove8 480s linear infinite;
+    font-size: 100px;
+    font-family: Verdana;
+    
+    
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove9 {
+    50% {-webkit-transform: rotate(14400deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove9 {
+  50% {-webkit-transform: rotate(14400deg);}
 }

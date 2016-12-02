@@ -1,9 +1,9 @@
 ﻿
 @{
     ViewBag.Title = "Ajankulua";
-     }
+}
 
-@section scripts{
+
 <!-- Custom styles for this template -->
 <link href="carousel.css" rel="stylesheet">
 <link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
@@ -13,10 +13,11 @@
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="jquery-1.12.1.js"></script>
 
+@section scripts{
 <style>
-    div.background {
-        background-image: url('../../Images/jaakiteet.jpg');
-        border: 2px solid black;
+        div.background {
+            background-image: url('../../Images/jaakiteet.jpg');
+            border: 2px solid black;
     }
 
         div.transbox {
@@ -61,8 +62,9 @@
 
 <link href="~/Content/Ajankulua.css" rel="stylesheet" />
 
-<!-- WRAPPER
-================================================== -->
+<body>
+    <!-- WRAPPER
+    ================================================== -->
     <div class="wrapper">
         <div class="background">
             <div class="transbox">
@@ -82,20 +84,15 @@
                     Talvi     Kevät      Kesä      Syksy       Talvi         Kevät      Kesä   Syksy      Talvi    Kevät      Kesä   Syksy
                     Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä     Syksy   Talvi          Kevät   Kesä   Syksy
                     Talvi     Kevät     Kesä   Syksy     Talvi   Kevät     Kesä   Syksy     Talvi   Kevät     Kesä      Syksy
-                    <div id="div1">Talvi Kevät></div>
+                    @*<div id="div1">Talvi Kevät></div>*@
                 </div>
             </div><!-- /.transbox END -->
         </div><!-- /.background END -->
     </div><!-- /.wrapper END -->
 
-<div class="container body-content">
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
-    </footer>
-</div>
+   
 
-
+</body>
 <!-- Bootstrap core JavaScript
  ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
