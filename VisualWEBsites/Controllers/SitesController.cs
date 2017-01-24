@@ -223,6 +223,10 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult ArtWall2()
+        {
+            return View();
+        }
         public ActionResult Syyskaisla()
         {
             return View();
@@ -255,6 +259,13 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+
+        public ActionResult MerryXmas2016()
+        {
+            return View();
+        }
+
+
     }
 }
     

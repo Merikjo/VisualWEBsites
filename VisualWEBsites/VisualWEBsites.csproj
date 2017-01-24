@@ -601,6 +601,8 @@
     <Content Include="Images\helmikuu2105.jpg" />
     <Content Include="Images\hiekka.jpg" />
     <Content Include="Images\huhtikuu2015.jpg" />
+    <Content Include="Images\IceStars.jpg" />
+    <Content Include="Images\IceStars2.jpg" />
     <Content Include="Images\ikkuna.jpg" />
     <Content Include="Images\ikkuna2.jpg" />
     <Content Include="Images\jaakiteet.jpg" />
@@ -786,7 +788,6 @@
     <Content Include="Images\WP_20160823_11_43_37_Pro_LI.jpg" />
     <Content Include="Images\WP_20160823_11_49_01_Pro_LI.jpg" />
     <Content Include="Images\Älypuhelin.jpg" />
-    <Content Include="leimaseina.jpg" />
     <Content Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy.pubxml.user" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -898,6 +899,8 @@
     <Content Include="Views\Sites\FishMovie.cshtml" />
     <Content Include="Views\Sites\Leimasin3.cshtml" />
     <Content Include="Views\Sites\ArtWall.cshtml" />
+    <Content Include="Views\Sites\ArtWall2.cshtml" />
+    <Content Include="Views\Sites\MerryXmas2016.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

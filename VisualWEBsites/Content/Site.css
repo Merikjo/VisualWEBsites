@@ -199,11 +199,12 @@ textarea {
 
 #myDIVpyorre4 {  
     animation-delay: 0s;
-    animation-timing-function: linear;
+    /*animation-timing-function: linear;*/
     /*transform-origin: 50% 50%;*/
     animation: mymove8 480s linear infinite;
      -webkit-animation: mymove8 480s linear infinite; /* Chrome, Safari, Opera */
     -moz-animation: mymove8 480s linear infinite;
+    transform-origin: 50% 50%;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove8 {
