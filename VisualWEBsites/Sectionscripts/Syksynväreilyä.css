@@ -1,0 +1,9 @@
+﻿                /* Chrome, Safari, Opera */
+                @-webkit-keyframes mymove {
+                30% {text-shadow: 10px 20px 30px rgb(128, 128, 128);}
+        }
+
+                /* Standard syntax */
+                @keyframes mymove {
+                30% {text-shadow: 10px 20px 30px rgb(255, 216, 0);}
+        }

@@ -2,19 +2,32 @@
 @{
     ViewBag.Title = "KevatHeijastePyorre";
 }
-<!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/Content/Site.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 <script src="http://code.jquery.com/jquery.min.js"></script>
 
-<script src="~/Scripts/jquery-3.1.1.js"></script>
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@section head{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
 
     <style>
+        body {
+            background-color: rgb(232,232,232);
+        }
+
         div.background {
             background-image: url('../../Images/jääpeilipysty.jpg');
             border: 2px solid black;
@@ -78,179 +91,187 @@
     </style>
 }
 
+   <!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:0px;margin-top:20px;">
 
-<!--BACKGROUND-->
-<div class="background">
-    @*<div class="transbox">*@
+    <!-- Header -->
+    <header class="w3-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-dashboard"></i> </b></h5>
+    </header>
+
+    <!--BACKGROUND-->
+    <div class="background">
+        @*<div class="transbox">*@
         @*<div class="transbox2">*@
-            <div class="pallot">
+        <div class="pallot">
 
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">    
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>               
-                    </div><!-- /.col-lg-4 -->
-               
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">      
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-
-                <div class="clearfix"></div>
-
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
                 </div><!-- /.col-lg-4 -->
+            </div>
 
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
 
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
                 </div><!-- /.col-lg-4 -->
-           
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div> 
+            </div>
 
-                <div class="clearfix"></div>
-
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">        
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-           
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">       
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-               
-                <div class="clearfix"></div>
-
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                </div><!-- /.col-lg-4 -->
-
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                </div><!-- /.col-lg-4 -->
-
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div> 
-                
-
-                <div class="clearfix"></div>
-
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">
-                    
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-             
-
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
-
-                <div class="col-sm-4">
-                    
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
 
             <div class="clearfix"></div>
 
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
                 </div><!-- /.col-lg-4 -->
+            </div>
 
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
 
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
                 </div><!-- /.col-lg-4 -->
+            </div>
 
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div> 
-             
             <div class="clearfix"></div>
 
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
 
-                <div class="col-sm-4">
-                 
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-               
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
 
-                <div class="col-sm-4">
-                    <div id="myDIVpyorre4">
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-                </div>
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
 
-                <div class="col-sm-4">
-                    
-                        <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
-                    </div><!-- /.col-lg-4 -->
-             
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
 
-                <div class="clearfix"></div>
+            <div class="clearfix"></div>
 
-            </div><!--pallot END-->
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
 
-           
-</div><!--BACKGROUND END-->
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
 
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+
+            <div class="clearfix"></div>
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <div class="col-sm-4">
+
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <div class="col-sm-4">
+
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+
+            <div class="clearfix"></div>
+
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <div class="col-sm-4">
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <div class="col-sm-4">
+
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+
+            <div class="col-sm-4">
+                <div id="myDIVpyorre4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+                </div><!-- /.col-lg-4 -->
+            </div>
+
+            <div class="col-sm-4">
+
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jääpeilipysty.jpg" alt="jääbutton" width="200" height="200"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="clearfix"></div>
+
+        </div><!--pallot END-->
+    </div><!--BACKGROUND END-->
+</div>
+
+<script src="~/Scripts/jquery-2.2.4.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 

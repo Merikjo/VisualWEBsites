@@ -3,105 +3,136 @@
     ViewBag.Title = "Ajankulua";
 }
 
-
-<!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
 <script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="jquery-1.12.1.js"></script>
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@section head {
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/Sectionscripts/carousel.css" rel="stylesheet" />*@
+    <link href="~/Sectionscripts/Site.css" rel="stylesheet" />
+    <link href="~/Sectionscripts/Ajankulua.css" rel="stylesheet" />
+
 <style>
+    body {
+        background-color: rgb(232,232,232);
+    }
+    .container {
+        width: 100%;
+    }
+    div.wrapper {
+        color: rgb(220, 220, 220); /*harmaa*/
+        margin: 0px auto;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
         div.background {
             background-image: url('../../Images/jaakiteet.jpg');
-            border: 2px solid black;
-    }
+            border: 1px solid black;
+            width: 100%;
+            height:auto;
+            background-repeat: no-repeat;
+        }
 
         div.transbox {
-            margin: 5px;
+            /*margin: 5px;*/
             background-color: #ffffff;
             border: 1px solid black;
             opacity: 0.3;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             /*position:relative;*/
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
         }
 
-            div.transbox p {
-                /*margin: 50%;*/
-                font-weight: bold;
-                color: #000000;
-                font-size: 74px;
-                /*max-height:600px;*/
-                /*display: flex;*/
-                align-content:space-around;
-                position:relative;
-            }
+        div.transbox p {
+            /*margin: 50%;*/
+            font-weight: bold;
+            color: #000000;
+            font-size: 74px;
+            /*max-height:600px;*/
+            /*display: flex;*/
+            align-content: space-around;
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-repeat: no-repeat;
+        }
 
         #myDIVaika {
-                /*border: 1px solid black;*/
-                -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
-                animation: mymove 10s infinite;
-            }
-        
-                div.transbox p {
-                /*margin: 50%;*/
-                font-weight: bold;
-                color: #000000;
-                font-size: 74px;
-                /*max-height:600px;*/
-                /*display: flex;*/
-                align-content:space-around;
-            }
+            /*border: 1px solid black;*/
+            -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+            animation: mymove 10s infinite;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+        }
+
+        div.transbox p {
+            /*margin: 50%;*/
+            font-weight: bold;
+            color: #000000;
+            font-size: 74px;
+            /*display: flex;*/
+            align-content: space-around;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+        }
 
 </style>
     }
 
 
-<link href="~/Content/Ajankulua.css" rel="stylesheet" />
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:0px;margin-top:20px;">
 
-<body>
-    <!-- WRAPPER
-    ================================================== -->
-    <div class="wrapper">
-        <div class="background">
-            <div class="transbox">
+        <!-- Header -->
+        <header class="w3-container" style="padding-top:22px">
+            <h5><b><i class="fa fa-dashboard"></i> </b></h5>
+        </header>
 
-                <div id="myDIVaika" Style="font-size: 36px;">
-                    Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi   Kevät   Kesä   Syksy <p>Talvi Kevät Kesä Syksy</p>   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi     Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi     Kevät   Kesä     Syksy   Talvi     Kevät   Kesä   Syksy      Talvi   Kevät   Kesä   Syksy
-                    Talvi     Kevät     Kesä     Syksy     Talvi     Kevät   Kesä         Syksy   Talvi   Kevät   Kesä   Syksy
-                    Talvi     Kevät      Kesä      Syksy       Talvi         Kevät      Kesä   Syksy      Talvi    Kevät      Kesä   Syksy
-                    Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä     Syksy   Talvi          Kevät   Kesä   Syksy
-                    Talvi     Kevät     Kesä   Syksy     Talvi   Kevät     Kesä   Syksy     Talvi   Kevät     Kesä      Syksy
-                    @*<div id="div1">Talvi Kevät></div>*@
-                </div>
-            </div><!-- /.transbox END -->
-        </div><!-- /.background END -->
-    </div><!-- /.wrapper END -->
+        <!-- WRAPPER
+        ================================================== -->
+        <div class="wrapper">
+            <div class="background">
+                <div class="transbox">
 
-   
+                    <div id="myDIVaika" Style="font-size: 36px;">
+                        Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi   Kevät   Kesä   Syksy <p>Talvi Kevät Kesä Syksy</p>   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi     Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi     Kevät   Kesä     Syksy   Talvi     Kevät   Kesä   Syksy      Talvi   Kevät   Kesä   Syksy
+                        Talvi     Kevät     Kesä     Syksy     Talvi     Kevät   Kesä         Syksy   Talvi   Kevät   Kesä   Syksy
+                        Talvi     Kevät      Kesä      Syksy       Talvi         Kevät      Kesä   Syksy      Talvi    Kevät      Kesä   Syksy
+                        Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä     Syksy   Talvi          Kevät   Kesä   Syksy
+                        Talvi     Kevät     Kesä   Syksy     Talvi   Kevät     Kesä   Syksy     Talvi   Kevät     Kesä      Syksy
+                        @*<div id="div1">Talvi Kevät></div>*@
+                    </div>
+                </div><!-- /.transbox END -->
+            </div><!-- /.background END -->
+        </div><!-- /.wrapper END -->
+    </div>
 
-</body>
-<!-- Bootstrap core JavaScript
- ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="../../assets/js/vendor/holder.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+

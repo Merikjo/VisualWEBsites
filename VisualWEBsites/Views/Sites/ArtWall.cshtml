@@ -3,48 +3,61 @@
     ViewBag.Title = "ArtWall";
 }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-
-<!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/Content/Site.css" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery.min.js"></script>
 
+@section scripts {
+<script src="~/Scripts/modernizr-2.8.3.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
 <script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="~/Scripts/jquery-2.2.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-@section scripts{
+@Scripts.Render("~/bundles/jqueryval")
+}
+
+
+@section head{
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
+
 
     <style>
-         div.background {
-            background-image: url('../../images/seinä.jpg');
-            border: 2px solid black;
-            margin: 0px;
-            width:1080px;
-            height: 1920px;
+        body {
+            background-color: rgb(232,232,232);
         }
-        div.canvas {
-            margin: 5px;
+        div.background {
+            background-image: url('../../images/seinä.jpg');
+            border: 1px solid black;
+            width: 100%;
+            /*height: 100%;*/
+            /*width:1080px;*/
+            height: 1920px;
+            background-repeat: repeat;
+        }
+
+        div.canvas {     
             background-color: #ffffff;
             opacity: 0.5;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             text-align: center;
-            width:1065px;
-            height: 1905px;
+            /*width: 1065px;*/
+            height: 1920px;
+            width: 100%;
+            /*height: 100%;*/
         }
-       
-        div.transbox2 {
-            margin: 5px;     
+
+        div.transbox2 {  
             background-color: #b6d8dc; /*t.harmaa*/
             border: 1px solid black;
             opacity: 0.8;
             filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1052px;
-            height: 1892px;       
+            /*width: 1052px;*/
+            height: 1920px;
+            width: 100%;
+          
         }
 
         div.transbox3 {                 
@@ -54,10 +67,11 @@
           .img-circle {          
             border-radius:50%;     
             width:800px;
-            height:800px;                
+            height:800px;     
         }
+
         .w3-myfont {
-            font-family: "Comic Sans MS", /*cursive,*/, sans-serif;
+            font-family:"Comic Sans MS", /*cursive,*/, sans-serif;
             font-size: 150px;
         }
        
@@ -65,28 +79,38 @@
 
 }
 
-<body>
-    
 
-    <!--BACKGROUND-->
-    <div class="w3-container">
-        <div class="background">
-            <div class="canvas">
-                <div class="transbox2">
-                    <div class="transbox3">
 
-                        <div id="myDIVpyorre3">
-                            <div class="w3-display-container w3-text-white w3-myfont">
-                                <img class="img-circle" src="~/images/seinä.jpg" alt="seinä"><div class="w3-display-middle w3-myfont">WALL</div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:0px;margin-top:20px;">
+
+        <!-- Header -->
+        <header class="w3-container" style="padding-top:22px">
+            <h5><b><i class="fa fa-dashboard"></i> </b></h5>
+        </header>
+
+        <!--BACKGROUND-->
+        <div class="w3-container">
+            <div class="background">
+                <div class="canvas">
+                    <div class="transbox2">
+                        <div class="transbox3">
+                            <div id="myDIVpyorre3">
+                                <div class="w3-display-container w3-text-white w3-myfont">
+                                    <img class="img-circle" src="~/images/seinä.jpg" alt="seinä"><div class="w3-display-middle w3-myfont">WALL</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-     </div><!--BACKGROUND END-->
+        </div><!--BACKGROUND END-->
+    </div>
+
+    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 
 
-        
 
-</body>
+

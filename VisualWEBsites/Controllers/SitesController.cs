@@ -175,6 +175,10 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult Ikkuna2()
+        {
+            return View();
+        }
         public ActionResult TyöPaja()
         {
             return View();
@@ -192,6 +196,14 @@ namespace VisualWEBsites.Controllers
             return View();
         }
         public ActionResult VesiKiviPyorre2()
+        {
+            return View();
+        }
+        public ActionResult Pilvet()
+        {
+            return View();
+        }
+        public ActionResult Pilvet2()
         {
             return View();
         }
@@ -216,6 +228,14 @@ namespace VisualWEBsites.Controllers
             return View();
         }
         public ActionResult Leimasin3()
+        {
+            return View();
+        }
+        public ActionResult Ratas()
+        {
+            return View();
+        }
+        public ActionResult Ratas2()
         {
             return View();
         }
@@ -264,8 +284,19 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult ButtOn()
+        {
+            return View();
+        }
+        public ActionResult Sirkkeli()
+        {
+            return View();
+        }
 
-
+        public ActionResult Pearls()
+        {
+            return View();
+        }
     }
 }
     

@@ -2,57 +2,103 @@
 @{
     ViewBag.Title = "AikaTapit";
 }
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<script src="http://code.jquery.com/jquery.min.js"></script>
 
-@section scripts{
-<style>
-    div.background {
-        background-image: url('../../Images/rautatapit.jpg');
-        border: 2px solid black;
-        margin: 0 auto;
-        /*opacity:0.9;*/
-        width: 1080px;
-        height: 1920px;
-    }
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    div.transbox {
-        margin: 5px;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.5;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-        width: 1065px;
-        height: 1905px;
-    }
-
-    div.transbox2 {
-        margin: 5px;
-        background-color: #d6d6c2;
-        border: 1px solid black;
-        opacity: 0.8;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-        width: 1052px;
-        height: 1892px;
-    }
-
-    div.transbox P {
-        margin: 35%;
-        font-weight: bold;
-        color: #ffffff;
-        font-size: 200px;
-        width: 1035px;
-        height: 1875px;
-    }
-</style>
+    @Scripts.Render("~/bundles/jqueryval")
 }
 
 
-<!--BACKGROUND-->
-<div class="background">
-    <div class="transbox">
-        <div class="transbox2">
-            <p>TALVI KEVÄT KESÄ SYKSY</p>
-        </div>
-    </div>
-</div><!--BACKGROUND END-->
+@section head{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
 
+
+    <style>
+        body {
+            background-color: rgb(232,232,232);
+        }
+
+        div.background {
+            background-image: url('../../Images/rautatapit.jpg');
+            border: 2px solid black;
+            /*margin: 0 auto;*/
+            /*width: 1080px;*/
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+
+        div.transbox {
+            /*margin: 5px;*/
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            /*width: 1065px;*/
+            /*height: 1905px;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        div.transbox2 {
+            /*margin: 5px;*/
+            background-color: #d6d6c2;
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            /*width: 1052px;*/
+            /*height: 1892px;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        div.transbox P {
+            margin: 35%;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 200px;
+            /*width: 1035px;*/
+            /*height: 1875px;*/
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+}
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:0px;margin-top:20px;">
+
+        <!-- Header -->
+        <header class="w3-container" style="padding-top:22px">
+            <h5><b><i class="fa fa-dashboard"></i> </b></h5>
+        </header>
+
+        <!-- WRAPPER
+        ================================================== -->
+        <div class="wrapper">
+            <!--BACKGROUND-->
+            <div class="background">
+                <div class="transbox">
+                    <div class="transbox2">
+                        <p>TALVI KEVÄT KESÄ SYKSY</p>
+                    </div>
+                </div>
+            </div><!-- /.background END -->
+        </div><!-- /.wrapper END -->
+    </div>
+
+    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 

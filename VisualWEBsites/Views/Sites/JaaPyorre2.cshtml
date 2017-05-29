@@ -3,178 +3,200 @@
     ViewBag.Title = "JaaPyorre2";
 }
 
-<!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/Content/Site.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 <script src="http://code.jquery.com/jquery.min.js"></script>
 
-<script src="~/Scripts/jquery-3.1.1.js"></script>
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+@section head{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />  
+    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
+   
 
     <style>
-        div.canvas {
+        body {
+            background-color: rgb(232,232,232);
+        }
+
+        div.background {
             background-image: url('../../Images/jääpeilipysty.jpg');
-            border: 2px solid black;
-            margin: 0px;
-            width: 1080px;
+            border: 1px solid black;
+            width: 100%;
+            /*height: 100%;*/
+            background-repeat: no-repeat;
+            /*width: 1080px;*/
             height: 1920px;
         }
 
-        div.transbox {
-            margin: 5px;
+        div.transbox {     
             background-color: #ffffff;
             border: 1px solid black;
             opacity: 0.5;
             filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1080px;
+            width: 100%;
             height: 1920px;
         }
 
         div.transbox2 {
-            margin: 5px;
             background-color: #b6d8dc; /*t.harmaa*/
             border: 1px solid black;
             opacity: 0.6;
             filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1052px;
-            height: 1892px;
-            display: flex;
+            width: 100%;
+            height: 1920px;
+            /*display: flex;*/
+        }
+
+        div.transbox3 {
+            margin-top: 50%;
+            /*opacity: 0.9;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            /*width: 100%;
+            height: 1920px;*/     
+            /*text-align: center;*/
         }
 
         .transbox p {
-            margin-left: 5%;
-            margin-top: 5%;
             font-weight: bold;
             color: #393737;
             font-size: 100px;
-            width: 613px;
-            height: 1125px;
+            width: 100%;
+            height: 1920px;
         }
-        .pallot {
+
+        .img.circle {
+            border-radius: 50%;
+            width: 400px !important;
+            height: 400px !important;
+        }
+
+        /*.pallot {
             margin-top: 35%;
             opacity: 0.9;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
+            filter: alpha(opacity=60); /* For IE8 and earlier 
             text-align: center;
-
-        }
-         .col-sm-4 {   
+        }*/
+         /*.col-sm-4 {   
             margin-top: 25%;
             margin-left: 20%;
             margin-left: 20%;
             margin-bottom: 25%;
             text-align: center;
-
-        }
+        }*/
           div.teksti {
             /*position: absolute;*/ /*rivittää tekstin ruutuun*/         
             /*width: 100%; */         
             font-size: 60px;
             font-weight: bold;
             /*padding-left:5%;*/    
-            text-align: justify;
-                    
+            text-align: justify;                  
         }
-          img.circle {
-            /*border-radius:50%;*/
-            margin-top: 25%;
-            margin-left:50%;         
-            margin-bottom: 25%;
-              
-          }
-
     </style>
-
-<style>
-    /*canvas {
-        border: 1px solid #d3d3d3;
-        background-color: #f1f1f1;
-    }*/
-</style>
-
 }
 
-<body onload="startGame()">
-    <!--BACKGROUND-->
-    <div class="canvas">
-        <div class="transbox">
-            <div class="transbox2">
-                <div class="pallot">               
-                        <div id="myDIVpyorre3">
-                            <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpallo" width="400" height="400"></a>
+
+        <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:0px;margin-top:20px;">
+
+        <!-- Header -->
+        <header class="w3-container" style="padding-top:22px">
+            <h5><b><i class="fa fa-dashboard"></i> </b></h5>
+        </header>
+
+        <!--BACKGROUND-->
+        <div class="w3-container">
+            <div class="background">
+                <div class="transbox">
+                    <div class="transbox2">
+                        <div class="transbox3">
+                            <div id="myDIVpyorre3">
+                                <div class="w3-display-container w3-text-white w3-myfont">
+                                   <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpallo">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
+            </div><!--BACKGROUND END-->
         </div>
-    </div><!--BACKGROUND END-->
+    </div>
 
-    @*<script>
+        <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 
-var myGamePiece;
+            @*<script>
 
-function startGame() {
-    myGamePiece = new component(150, 150, src = "~/Images/jääpeilipysty.jpg", 235, 140, "image");
-    myGameArea.start();
-}
+                var myGamePiece;
 
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 20);
-    },
-    stop : function() {
-        clearInterval(this.interval);
-    },
-    clear : function() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-}
+                function startGame() {
+                    myGamePiece = new component(150, 150, src = "~/Images/jääpeilipysty.jpg", 235, 140, "image");
+                    myGameArea.start();
+                }
 
-function component(width, height, color, x, y, type) {
-    this.type = type;
-    if (type == "image") {
-        this.image = new Image();
-        this.image.src = color;
-    }
+                var myGameArea = {
+                    canvas : document.createElement("canvas"),
+                    start : function() {
+                        this.canvas.width = 480;
+                        this.canvas.height = 270;
+                        this.context = this.canvas.getContext("2d");
+                        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                        this.frameNo = 0;
+                        this.interval = setInterval(updateGameArea, 20);
+                    },
+                    stop : function() {
+                        clearInterval(this.interval);
+                    },
+                    clear : function() {
+                        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    }
+                }
 
-    this.width = width;
-    this.height = height;
-    this.angle = 0;
-    this.x = x;
-    this.y = y;
-    this.update = function() {
-        ctx = myGameArea.context;
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.angle);
-        ctx.fillStyle = color;
-        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
-        ctx.restore();
-    }
-}
+                function component(width, height, color, x, y, type) {
+                    this.type = type;
+                    if (type == "image") {
+                        this.image = new Image();
+                        this.image.src = color;
+                    }
 
-function updateGameArea() {
-    myGameArea.clear();
-    myGamePiece.angle += 1 * Math.PI / 180;
-    myGamePiece.update();
-}
+                    this.width = width;
+                    this.height = height;
+                    this.angle = 0;
+                    this.x = x;
+                    this.y = y;
+                    this.update = function() {
+                        ctx = myGameArea.context;
+                        ctx.save();
+                        ctx.translate(this.x, this.y);
+                        ctx.rotate(this.angle);
+                        ctx.fillStyle = color;
+                        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
+                        ctx.restore();
+                    }
+                }
 
-    </script>*@
+                function updateGameArea() {
+                    myGameArea.clear();
+                    myGamePiece.angle += 1 * Math.PI / 180;
+                    myGamePiece.update();
+                }
+
+                    </script>*@
 
 
 
-</body>
+ 
 
 

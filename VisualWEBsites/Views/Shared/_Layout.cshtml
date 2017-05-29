@@ -1,202 +1,209 @@
 ﻿<!DOCTYPE html>
-<html lang="fi - fi">
-
+<html lang="fi">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- For intranet testing only, remove in production. -->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <script src="~/Content/carousel.js"></script>
-    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewBag.Title - VisualWEBsites</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="icon" href="../../favicon.ico">
+    <link href="~/Sectionscripts/carousel.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
 
-    @*<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>*@ 
-
+    <script src="~/Sectionscripts/carousel.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/respond.js"></script>
 
-    <title>@ViewBag.Title - Maisemakuvia</title>
-
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Custom styles for this template -->
-
-
-    <link href="Index.cshtml" rel="index">
-    <link href="Talvi.cshtml" rel="Talvi">
-    <link href="Kesa.cshtml" rel="Kesä">
-    <link href="Ajankulua.cshtml" rel="Ajankulua">
-    <link href="YearsGoOn.cshtml" rel="YearsGoOn">
-
-    <link href="~/Content/Site.css" rel="stylesheet" />
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("head", required: false)
 
     <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
         }({
-            instrumentationKey:"1a0213e6-e58b-46ec-83e0-4489b56725a5"
+            instrumentationKey: "1a0213e6-e58b-46ec-83e0-4489b56725a5"
         });
 
-        window.appInsights=appInsights;
+        window.appInsights = appInsights;
         appInsights.trackPageView();
-     
     </script>
 
-    </head>
+</head>
 
-    <body>
-        <div class="navbar-wrapper">
-            <nav class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                       
-                        @Html.ActionLink("Maisemakuvia", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    </div>
+<body>
+    @*<div class="navbar-wrapper">*@
+    @*<nav class="navbar navbar-inverse navbar-static-top">*@
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                           
-                            @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                @Html.ActionLink("Maisemakuvia", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
 
-                            <li class="dropdown">
-                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li>@Html.ActionLink("Maisemakuvia", "Index", "Home")</li>
-                                    <li>@Html.ActionLink("Talvi", "Talvi", "Sites")</li>
-                                    <li>@Html.ActionLink("Kevät", "Kevät", "Sites")</li>
-                                    <li>@Html.ActionLink("Kesä", "Kesä", "Sites")</li>
-                                    <li>@Html.ActionLink("Syksy", "Syksy", "Sites")</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Maisemointia</li>
-                                    <li>@Html.ActionLink("Ajankulua", "Ajankulua", "Sites")</li>
-                                    <li>@Html.ActionLink("Time goes by...", "Timegoesby", "Sites")</li>
-                                    <li>@Html.ActionLink("Time goes by...", "Timegoesby2", "Sites")</li>
-                                    <li>@Html.ActionLink("YearsGoOn", "YearsGoOn", "Sites")</li>
-                                    <li>@Html.ActionLink("TalviImage1", "TalviImage1", "Sites")</li>
-                                    <li>@Html.ActionLink("TalviImage2", "TalviImage2", "Sites")</li>
-                                    <li>@Html.ActionLink("TalviImage3", "TalviImage3", "Sites")</li>
-                                    <li>@Html.ActionLink("KevätImage1", "KevatImage1", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäImage1", "KesaImage1", "Sites")</li>
-                                    <li>@Html.ActionLink("Vuodenaika", "Vuodenaika", "Sites")</li>
-                                    <li>@Html.ActionLink("Vuodenaika2", "Vuodenaika2", "Sites")</li>
-                                    <li>@Html.ActionLink("Vuodenaika3", "Vuodenaika3", "Sites")</li>
-                                    <li>@Html.ActionLink("RautaAika", "RautaAika", "Sites")</li>
-                                    <li>@Html.ActionLink("Ketju", "Ketju", "Sites")</li>
-                                    <li>@Html.ActionLink("AikaTapit", "AikaTapit", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäKaisla", "KesäKaisla", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäVuokot", "KesäVuokot", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäVuokot2", "KesäVuokot2", "Sites")</li>
-                                    <li>@Html.ActionLink("Voimala", "Voimala", "Sites")</li>
-                                    <li>@Html.ActionLink("KevätHeijaste", "KevätHeijaste", "Sites")</li>
-                                    <li>@Html.ActionLink("KevätHeijaste2", "KevätHeijaste2", "Sites")</li>
-                                    <li>@Html.ActionLink("KevätHeijaste3", "KevätHeijaste3", "Sites")</li>
-                                    <li>@Html.ActionLink("KevätHeijaste4", "KevätHeijaste4", "Sites")</li>
-                                    <li>@Html.ActionLink("KevatHeijastePyorre", "KevatHeijastePyorre", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäHaituva", "KesäHaituva", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäHaituva2", "KesäHaituva2", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäHaituva3", "KesäHaituva3", "Sites")</li>
-                                    <li>@Html.ActionLink("Ikkuna", "Ikkuna", "Sites")</li>
-                                    <li>@Html.ActionLink("TyöPaja", "TyöPaja", "Sites")</li>
-                                    <li>@Html.ActionLink("OppositeSite", "OppositeSite", "Sites")</li>
-                                    <li>@Html.ActionLink("VesiKivi", "VesiKivi", "Sites")</li>
-                                    <li>@Html.ActionLink("VesiKiviPyörre", "VesiKiviPyorre", "Sites")</li>
-                                    <li>@Html.ActionLink("VesiKiviPyörre2", "VesiKiviPyorre2", "Sites")</li>
-                                    <li>@Html.ActionLink("JääPyörre", "JaaPyorre", "Sites")</li>
-                                    <li>@Html.ActionLink("JääPyörre2", "JaaPyorre2", "Sites")</li>
-                                    <li>@Html.ActionLink("Leimasin", "Leimasin", "Sites")</li>
-                                    <li>@Html.ActionLink("Leimasin2", "Leimasin2", "Sites")</li>
-                                    <li>@Html.ActionLink("Leimasin3", "Leimasin3", "Sites")</li>
-                                    <li>@Html.ActionLink("ArtWall", "ArtWall", "Sites")</li>
-                                    <li>@Html.ActionLink("ArtWall2", "ArtWall2", "Sites")</li>
-                                    <li>@Html.ActionLink("Syyskaisla", "Syyskaisla", "Sites")</li>
-                                    <li>@Html.ActionLink("Ketjussa", "Ketjussa", "Sites")</li>
-                                    <li>@Html.ActionLink("Ketjutus", "Ketjutus", "Sites")</li>
-                                    <li>@Html.ActionLink("Älypuhelin", "Älypuhelin", "Sites")</li>
-                                    <li>@Html.ActionLink("KevätKaiPuu", "KevätKaiPuu", "Sites")</li>
-                                    <li>@Html.ActionLink("Move", "Move", "Sites")</li>
-                                    <li>@Html.ActionLink("FishMovie", "FishMovie", "Sites")</li>
-                                    <li>@Html.ActionLink("KesäPyörä", "KesaPyora", "Sites")</li>
-                                    <li>@Html.ActionLink("MerryXmas2016", "MerryXmas2016", "Sites")</li>
+            @*<div id="navbar" class="navbar-collapse collapse">*@
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
 
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Luontokuvia</li>
-                                    <li>@Html.ActionLink("Talvikuvat", "Talvikuvat", "Sites")</li>
-                                    <li>@Html.ActionLink("Kevätkuvat", "Kevatkuvat", "Sites")</li>
-                                    <li>@Html.ActionLink("Kesäkuvat", "Kesakuvat", "Sites")</li>
-                                    <li>@Html.ActionLink("Syksykuvat", "Syksykuvat", "Sites")</li>
-                                    <li>@Html.ActionLink("Photos", "Photos", "Sites")</li>
+                    @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
-                                </ul>
-                            </li>
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SeasonSites <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Maisemakuvia", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Talvi", "Talvi", "Sites")</li>
+                            <li>@Html.ActionLink("Kevät", "Kevät", "Sites")</li>
+                            <li>@Html.ActionLink("Kesä", "Kesä", "Sites")</li>
+                            <li>@Html.ActionLink("Syksy", "Syksy", "Sites")</li>
+                            <li>@Html.ActionLink("TalviImage1", "TalviImage1", "Sites")</li>
+                            <li>@Html.ActionLink("TalviImage2", "TalviImage2", "Sites")</li>
+                            <li>@Html.ActionLink("TalviImage3", "TalviImage3", "Sites")</li>
+                            <li>@Html.ActionLink("KevätImage1", "KevatImage1", "Sites")</li>
+                            <li>@Html.ActionLink("KesäImage1", "KesaImage1", "Sites")</li>
+                            <li>@Html.ActionLink("Vuodenaika", "Vuodenaika", "Sites")</li>
+                            <li>@Html.ActionLink("Vuodenaika2", "Vuodenaika2", "Sites")</li>
+                            <li>@Html.ActionLink("Vuodenaika3", "Vuodenaika3", "Sites")</li>
+                            <li>@Html.ActionLink("Syyskaisla", "Syyskaisla", "Sites")</li>
+                            <li>@Html.ActionLink("KevätHeijaste", "KevätHeijaste", "Sites")</li>
+                            <li>@Html.ActionLink("KevätHeijaste2", "KevätHeijaste2", "Sites")</li>
+                            <li>@Html.ActionLink("KevätHeijaste3", "KevätHeijaste3", "Sites")</li>
+                            <li>@Html.ActionLink("KevätHeijaste4", "KevätHeijaste4", "Sites")</li>
+                            <li>@Html.ActionLink("KesäKaisla", "KesäKaisla", "Sites")</li>
+                            <li>@Html.ActionLink("KesäVuokot", "KesäVuokot", "Sites")</li>
+                            <li>@Html.ActionLink("KesäVuokot2", "KesäVuokot2", "Sites")</li>
+                            <li>@Html.ActionLink("KesäHaituva", "KesäHaituva", "Sites")</li>
+                            <li>@Html.ActionLink("KesäHaituva2", "KesäHaituva2", "Sites")</li>
+                            <li>@Html.ActionLink("KesäHaituva3", "KesäHaituva3", "Sites")</li>
+                            <li>@Html.ActionLink("KevätKaiPuu", "KevätKaiPuu", "Sites")</li>
+
+                            <li>@Html.ActionLink("RautaAika", "RautaAika", "Sites")</li>
+                            <li>@Html.ActionLink("Ketju", "Ketju", "Sites")</li>
+                            <li>@Html.ActionLink("AikaTapit", "AikaTapit", "Sites")</li>
+                            <li>@Html.ActionLink("Ikkuna", "Ikkuna", "Sites")</li>
+                            <li>@Html.ActionLink("Ikkuna2", "Ikkuna2", "Sites")</li>
+                            <li>@Html.ActionLink("OppositeSite", "OppositeSite", "Sites")</li>
+                            <li>@Html.ActionLink("Ketjussa", "Ketjussa", "Sites")</li>
+                            <li>@Html.ActionLink("Ketjutus", "Ketjutus", "Sites")</li>
+
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Maisemointia</li>
+
+
+
+
+
+
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Luontokuvia</li>
+                            <li>@Html.ActionLink("Talvikuvat", "Talvikuvat", "Sites")</li>
+                            <li>@Html.ActionLink("Kevätkuvat", "Kevatkuvat", "Sites")</li>
+                            <li>@Html.ActionLink("Kesäkuvat", "Kesakuvat", "Sites")</li>
+                            <li>@Html.ActionLink("Syksykuvat", "Syksykuvat", "Sites")</li>
+                            <li>@Html.ActionLink("Photos", "Photos", "Sites")</li>
+
                         </ul>
-                    </div><!--navbar-collapse collapse END-->
-                </div><!--container END-->
-            </nav>
-        </div><!--navbar-wrapper END-->
+                    </li>
 
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
-            </footer>
-        </div>
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MovingSites <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+                            <li>@Html.ActionLink("Ajankulua", "Ajankulua", "Sites")</li>
+                            <li>@Html.ActionLink("Time goes by...", "Timegoesby", "Sites")</li>
+                            <li>@Html.ActionLink("Time goes by...", "Timegoesby2", "Sites")</li>
 
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <!-- Bootstrap core JavaScript
+                            <li>@Html.ActionLink("Move", "Move", "Sites")</li>
+
+                            <li>@Html.ActionLink("Sirkkeli", "Sirkkeli", "Sites")</li>
+                            <li>@Html.ActionLink("MerryXmas2016", "MerryXmas2016", "Sites")</li>
+                            <li>@Html.ActionLink("FishMovie", "FishMovie", "Sites")</li>
+                            <li>@Html.ActionLink("KesäPyörä", "KesaPyora", "Sites")</li>
+
+                            <li>@Html.ActionLink("Ratas", "Ratas", "Sites")</li>
+                            <li>@Html.ActionLink("Ratas2", "Ratas2", "Sites")</li>
+                            <li>@Html.ActionLink("ArtWall", "ArtWall", "Sites")</li>
+
+                            <li>@Html.ActionLink("VesiKiviPyörre", "VesiKiviPyorre", "Sites")</li>
+                            <li>@Html.ActionLink("VesiKiviPyörre2", "VesiKiviPyorre2", "Sites")</li>
+                            <li>@Html.ActionLink("JääPyörre", "JaaPyorre", "Sites")</li>
+                            <li>@Html.ActionLink("JääPyörre2", "JaaPyorre2", "Sites")</li>
+                            <li>@Html.ActionLink("Pilvet", "Pilvet", "Sites")</li>
+                            <li>@Html.ActionLink("Pilvet2", "Pilvet2", "Sites")</li>
+                            <li>@Html.ActionLink("KevatHeijastePyorre", "KevatHeijastePyorre", "Sites")</li>
+                            <li>@Html.ActionLink("Leimasin2", "Leimasin2", "Sites")</li>
+                            <li>@Html.ActionLink("Pearls", "Pearls", "Sites")</li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ThemeSites <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li>@Html.ActionLink("Voimala", "Voimala", "Sites")</li>
+                            <li>@Html.ActionLink("VesiKivi", "VesiKivi", "Sites")</li>
+                            <li>@Html.ActionLink("Älypuhelin", "Älypuhelin", "Sites")</li>
+
+                            <li>@Html.ActionLink("Leimasin", "Leimasin", "Sites")</li>
+                            <li>@Html.ActionLink("Leimasin3", "Leimasin3", "Sites")</li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ButtOn <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("ButtOn", "ButtOn", "Sites")</li>
+                            <li>@Html.ActionLink("ArtWall2", "ArtWall2", "Sites")</li>
+                        </ul>
+                    </li>
+
+
+            </div><!--navbar-collapse collapse END-->
+        </div><!--container END-->
+        @*</nav>*@
+    </div> <!--navbar-wrapper END-->
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="w3-container w3-padding-16 w3-grey">
+            <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/docs/assets/js/vendor/jquery.min.js"></script>
-        <script src="../../dist/js/bootstrap.min.js"></script>
-        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
-        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-        <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-        <script src="~/bootstrap-3.3.6/bootstrap-3.3.6/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <a href="~/bootstrap-3.3.6/bootstrap-3.3.6/dist/css/bootstrap.min.css.map"></a>
-    </body>
+    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+
+</body>
 </html>

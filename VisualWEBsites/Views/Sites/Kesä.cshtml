@@ -2,38 +2,66 @@
 @{
     ViewBag.Title = "Kesä";
 }
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<script src="http://code.jquery.com/jquery.min.js"></script>
 
-@section scripts{
-<!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<style>
-    div.background {
-        
-        background-image: url('../../Images/juhannusruusu.jpg');
-        border: 2px solid black;
-    }
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
-    div.transbox {
-        margin: 5px;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.6;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-    }
 
-        div.transbox p {
-            margin: 50%;
-            font-weight: bold;
-            color: #000000;
-            font-size: 74px;
+@section head{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
+
+
+    <style>
+        body {
+            background-color: rgb(232,232,232);
         }
-</style>
+
+        div.background {
+            background-image: url('../../Images/juhannusruusu.jpg');
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            height: 2247px;
+            width: 100%;
+        }
+
+        div.transbox {
+            /*margin: 5px;*/
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 2247px;
+            width: 100%;
+        }
+
+            div.transbox p {
+                margin: 40%;
+                margin-top: 100%;
+                font-weight: bold;
+                color: #000000;
+                font-size: 100px;
+                height: 2247px;
+                width: 100%;
+            }
+    </style>
     }
 
 
 
-
+  <!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:0px;margin-top:10px;">
     <!-- WRAPPER
     ================================================== -->
 
@@ -41,9 +69,14 @@
 
         <div class="background">
             <div class="transbox">
-                <p>Kesä tuoksuu ruusulta.</p>
+                <p>Kesä tuoksuu<br />
+                ruusulta.</p>
             </div>
         </div>
 
-</div><!-- /.wrappwer END -->
+    </div><!-- /.wrappwer END -->
+</div>
 
+<script src="~/Scripts/jquery-2.2.4.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>

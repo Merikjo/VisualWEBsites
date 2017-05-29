@@ -3,54 +3,87 @@
     ViewBag.Title = "Syksy";
 }
 
-@section scripts{
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@section head{
     <!--syksyn väreilytekstiasetukset-->
-<link href="~/Content/carousel.css" rel="stylesheet" />
-<link href="~/Content/Syksynväreilyä.css" rel="stylesheet" />
+
+@*<link href="~/Sectionscripts/carousel.css" rel="stylesheet" />*@
+<link href="~/Sectionscripts/Syksynväreilyä.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />*@
 <style>
+    body {
+        background-color: rgb(232,232,232);
+    }
+
     div.background {
         background-image: url('../../Images/syysvarjo.jpg');
         border: 2px solid black;
         /*overflow: auto;*/
-        margin: 0 auto;
+     
         height: 674px;
-        width: 1198px;
+        /*width: 1198px;*/
+        width:100%;
     }
 
-        div.transbox {
-        margin: 5px;
+    div.transbox {
+        /*margin: 5px;*/
         background-color: #ffffff;
         border: 1px solid black;
         opacity: 0.5;
         filter: alpha(opacity=60); /* For IE8 and earlier */
-        height: 659px;
-        width: 1183px;
-        }
+        height: 674px;
+        width: 100%;
+    }
 
-            div.transbox p {
-        margin-left: 50%;
-        margin-top: 30%;
-        font-weight: bold;
-        color: #000000;
-        font-size: 74px;
-        text-shadow: 2px 2px 4px #000000;
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-        height: 646px;
-        width: 1170px;
+        div.transbox p {
+            margin-left: 50%;
+            margin-top: 30%;
+            font-weight: bold;
+            color: #000000;
+            font-size: 74px;
+            text-shadow: 2px 2px 4px #000000;
+            -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+            animation: mymove 5s infinite;
+            height: 674px;
+            width: 100%;
         }
 
 </style>
     }
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:0px;margin-top:10px;">
 
     <!--BACKGROUND-->
     <div class="background">
         <div class="transbox">
-            <p>Syksyn <br />
-            väreilyä.</p>
+            <p>
+                Syksyn <br />
+                väreilyä.
+            </p>
         </div>
     </div><!--BACKGROUND END-->
+</div>
+
+<script src="~/Scripts/jquery-2.2.4.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
 
 
 

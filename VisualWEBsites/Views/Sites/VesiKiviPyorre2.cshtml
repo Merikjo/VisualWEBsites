@@ -2,22 +2,26 @@
 @{
     ViewBag.Title = "VesiKiviPyorre2";
 }
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-
-
-<!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/Content/Site.css" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery.min.js"></script>
 
-<script src="~/Scripts/jquery-3.1.1.js"></script>
+@section scripts {
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+@section head{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
 
     <style>
         div.background {
@@ -82,18 +86,30 @@
     </style>
 }
 
-<body>
+     <!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:0px;margin-top:20px;">
+
+    <!-- Header -->
+    <header class="w3-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-dashboard"></i> </b></h5>
+    </header>
+
     <!--BACKGROUND-->
     <div class="background">
         <div class="canvas">
             <div class="transbox2">
-                <div class="transbox3">                 
-                    <div id="myDIVpyorre3"><div class="teksti">KIVI</div>
+                <div class="transbox3">
+                    <div id="myDIVpyorre3">
+                        <div class="teksti">KIVI</div>
                         <img class="img-circle" src="~/Images/kivivesi3.jpg" alt="kivivesi3">
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div><!--BACKGROUND END-->
+</div>
 
-</body>
+<script src="~/Scripts/jquery-2.2.4.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
