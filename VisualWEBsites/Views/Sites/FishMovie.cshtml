@@ -3,83 +3,74 @@
     ViewBag.Title = "FishMovie";
 }
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <!-- Custom styles for this template -->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" media="all" href="css/reset.css" /> <!-- reset css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/Content/carousel.css" rel="stylesheet" />
 <link href="~/Content/Site.css" rel="stylesheet" />
-<script src="http://code.jquery.com/jquery.min.js"></script>
 
-<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="~/Scripts/jquery-2.2.4.js"></script>
 
 @section scripts{
-
-
-<style>
-    div.background {     
-        background-image: url('../../Images/jääpeilipysty.jpg');
-        border: 2px solid black;
-        opacity: 0.8;
-        /*margin: 50px;*/
-        width: 1080px;
-        height: 1920px;
-        text-align: center;
-    }
-
-    div.transbox {
-        /*margin: 5px;*/
-        background-color: #ffffff;
-        /*border: 1px solid black;*/
-        opacity: 0.6;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-        width: 1080px;
-        height: 1920px;
-    }
-
-        div.transbox p {
-            margin-top: 5%;
-            margin-left: 5%;
-            font-weight: bold;
-            color: #808080;
-            font-size: 74px;
+    <style>
+        div.background {
+            background-image: url('../../Images/jääpeilipysty.jpg');
+            border: 2px solid black;
+            opacity: 0.8;
+            /*margin: 50px;*/
+            width: 1080px;
+            height: 1920px;
             text-align: center;
-            /*width: 1035px;
-            height: 1875px;*/
         }
+
+        div.transbox {
+            /*margin: 5px;*/
+            background-color: #ffffff;
+            /*border: 1px solid black;*/
+            opacity: 0.6;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            width: 1080px;
+            height: 1920px;
+        }
+
+            div.transbox p {
+                margin-top: 5%;
+                margin-left: 5%;
+                font-weight: bold;
+                color: #808080;
+                font-size: 74px;
+                text-align: center;
+                /*width: 1035px;
+            height: 1875px;*/
+            }
+
         div.ratas {
             margin-top: 5%;
             opacity: 0.7;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             text-align: center;
         }
+
         video {
-        width: 100%;
-        height: auto;
-    }
-</style>
-    }
-
-
+            width: 100%;
+            height: auto;
+        }
+    </style>
+}
 
 <body>
-    
+
     <div class="background">
         <div class="transbox">
 
-                    <video width="1076" autoplay loop muted><source src="~/Images/FishMovie.mp4" type="video/mp4" />
-                    <source src="~/Images/FishMovie.ogg" type="video/ogg">
-                    Your browser does not support HTML5 video.
-                    </video>
+            <video width="1076" autoplay loop muted>
+                <source src="~/Images/FishMovie.mp4" type="video/mp4" />
+                <source src="~/Images/FishMovie.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
 
             @*<iframe width="560" height="315" src="~/Images/FishMovie.mp4" frameborder="0" allowfullscreen></iframe>*@
-                </div>
-            </div>
+        </div>
+    </div>
 
-    
-        
+
+
 </body>

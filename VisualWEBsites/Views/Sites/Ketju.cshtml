@@ -3,48 +3,52 @@
     ViewBag.Title = "Ketju";
 }
 
-@section scripts{
-<style>
-    div.background {
-        background-image: url('../../Images/ketju.jpg');
-        border: 2px solid black;
-        margin: 0px;
-        height: 658px;
-        width: 1170px;
-    }
-
-    div.transbox {
-        margin: 5px;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.5;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-        height: 643px;
-        width: 1155px;
-    }
-
-    div.transbox2 {
-        margin: 5px;
-        background-color: #b6d8dc;
-        border: 1px solid black;
-        opacity: 0.8;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-        height: 630px;
-        width: 1142px;
-    }
-
-    div.transbox p {
-        margin-left: 70%;
-        margin-top: 10%;
-        font-weight: bold;
-        color: #ffffff;
-        font-size: 75px;
-        height: 613px;
-        width: 1125px;
-    }
-</style>
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
 }
 
+@section head{
+    <style>
+        div.background {
+            background-image: url('../../Images/ketju.jpg');
+            border: 2px solid black;
+            margin: 0px;
+            height: 658px;
+            width: 1170px;
+        }
+
+        div.transbox {
+            margin: 5px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 643px;
+            width: 1155px;
+        }
+
+        div.transbox2 {
+            margin: 5px;
+            background-color: #b6d8dc;
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+            height: 630px;
+            width: 1142px;
+        }
+
+        div.transbox p {
+            margin-left: 70%;
+            margin-top: 10%;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 75px;
+            height: 613px;
+            width: 1125px;
+        }
+    </style>
+}
 
 <!--BACKGROUND-->
 <div class="background">
@@ -60,5 +64,3 @@
         </div>
     </div>
 </div><!--BACKGROUND END-->
-
-

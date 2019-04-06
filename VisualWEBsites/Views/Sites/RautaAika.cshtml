@@ -3,8 +3,13 @@
     ViewBag.Title = "RautaAika";
 }
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
+@section head{
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <style>
         div.background {
             background-image: url('../../Images/rautanuppi.jpg');
@@ -51,13 +56,12 @@
 <div class="background">
     <div class="transbox">
         <div class="transbox2">
-            <p>Talvi<br />
-            Kevät<br />
-            Kesä<br /> 
-            Syksy</p>
-         
+            <p>
+                Talvi<br />
+                Kevät<br />
+                Kesä<br />
+                Syksy
+            </p>
         </div>
     </div>
 </div><!--BACKGROUND END-->
-
-

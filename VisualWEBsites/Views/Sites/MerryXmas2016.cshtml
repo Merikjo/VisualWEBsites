@@ -4,37 +4,32 @@
 }
 
 @section scripts {
-    <script src="~/Scripts/modernizr-2.8.3.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="/Scripts/bootstrap.js"></script>
-    <script src="/Scripts/respond.js"></script>
-    <script src="~/Scripts/jquery-3.1.1.js"></script>
     <script src="~/Scripts/jquery-2.2.4.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     @Scripts.Render("~/bundles/jqueryval")
 }
 
 
 @section head{
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link href="~/Content/Mysite.css" rel="stylesheet" /> />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
-        body{
-            background-color:gainsboro;
+        body {
+            background-color: gainsboro;
         }
+
         div.background {
             background-image: url('../../Images/IceStars2.jpg');
             border: 2px solid black;
             opacity: 0.8;
-            margin: 50px;
-            width: 1080px;
+            margin: 25px;
+            /*width: 1080px;*/
+            width: 100%;
             height: 1920px;
             text-align: center;
+            position: relative;
+            background-repeat: no-repeat;
         }
 
         div.transbox {
@@ -75,10 +70,9 @@
             opacity: 0.9;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             text-align: center;
-
         }
 
-        div.col-sm-4 {
+        div.col-sm-3 {
             margin-top: 5%;
             text-align: center;
         }
@@ -90,45 +84,31 @@
             padding-bottom: 5px;
             padding-left: 5px;
         }
+
         .w3-myfont {
             font-family: "Comic Sans MS", /*cursive,*/, sans-serif;
             font-size: 36px;
         }
-        img{
-            margin-bottom:0px !important;
+
+        img {
+            margin-bottom: 0px !important;
         }
-        material-icons{
+
+        material-icons {
             text-align: center;
-            
-            
         }
     </style>
 }
 
-<body>
-    <!--BACKGROUND-->
-    <div class="w3-container">
-        <div class="background">
-            @*<div class="transbox">*@
-                @*<div class="transbox2">*@
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:0px;margin-top:10px;">
+            <!--BACKGROUND-->
+            @*<div class="w3-container">*@
+                <div class="background">
                     <div class="pallot">
 
-                        <div class="col-sm-4">
-                            <div id="myDIVpyorre4">
-                                 <div class="w3-center">
-                                    <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
-                                </div>
-                                <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>                              
-                             </div>                    
-                        </div><!-- /.col-lg-4 -->
-                          
-                        <div class="col-sm-4">
-                            <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
-                                <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">HYVÄÄ JOULUA</div>
-                        </div>
-                            </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -136,8 +116,23 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
+                            <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
+                                <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">HYVÄÄ JOULUA</div>
+                            </div>
+                        </div><!-- /.col-lg-4 -->
+
+                        <div class="col-sm-3">
+                            <div id="myDIVpyorre4">
+                                <div class="w3-center">
+                                    <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
+                                </div>
+                                <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
+                            </div>
+                        </div><!-- /.col-lg-4 -->
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">MERRY XMAS</div>
                             </div>
@@ -145,13 +140,13 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">GOD JUL</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -159,14 +154,14 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont" font-size="12">ONNEA VUODELLE 2017</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -177,7 +172,7 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -185,14 +180,14 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">HAPPY NEW YEAR 2017</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -200,8 +195,8 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">JOYEUX NOËL</div>
                             </div>
@@ -209,13 +204,13 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">BONNE ANNÉE</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -223,14 +218,14 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">Feliz Navidad!</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -241,7 +236,7 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -249,14 +244,14 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">PRÓSPERO AÑO NUEVO</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -264,8 +259,8 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">BUON NATALE</div>
                             </div>
@@ -273,15 +268,13 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">FELICE ANNO NUOVO</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
-
-
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -289,14 +282,14 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">FROHE WEIH-<br />NACHTEN</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -304,10 +297,10 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
+
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -315,14 +308,14 @@
                                 <div class="w3-display-middle"><i class="material-icons w3-spin" style="font-size:160px;color:silver;">ac_unit</i></div>
                             </div>
                         </div><!-- /.col-lg-4 -->
-                        
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont" font-size="24">GLÜCK-<br />LICHES <br /> NEUES <br /> JAHR</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div id="myDIVpyorre4">
                                 <div class="w3-center">
                                     <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="jääpeili" width="200" height="200">
@@ -331,16 +324,21 @@
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="w3-display-container w3-text-white w3-myfont w3-animate-fading">
                                 <img class="square" src="~/Images/IceStars.jpg" alt="icestar" width="200" height="200"><div class="w3-display-middle w3-myfont">GOTT NYTT ÅR</div>
                             </div>
                         </div><!-- /.col-lg-4 -->
 
-                        <div class="clearfix"></div>
+                  
 
-                        
+
                     </div><!--pallot END-->
                 </div>
-    </div><!--BACKGROUND END-->
-</body>
+            </div><!--BACKGROUND END-->
+        @*</div>*@
+ 
+
+    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>

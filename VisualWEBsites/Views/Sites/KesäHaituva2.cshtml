@@ -3,7 +3,12 @@
     ViewBag.Title = "KesäHaituva2";
 }
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@section head{
     <style>
         div.background {
             background-image: url('../../Images/haituvapallo.jpg');
@@ -53,8 +58,6 @@
             width: 1035px;
             height: 1875px;
         }
-
-  
     </style>
 }
 
@@ -64,10 +67,8 @@
         <div class="transbox2">
             <div class="transbox3">
                 <p>KESÄ</p>
-                
+
             </div>
         </div>
     </div>
 </div><!--BACKGROUND END-->
-
-

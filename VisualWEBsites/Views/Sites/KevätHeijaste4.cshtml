@@ -3,13 +3,19 @@
     ViewBag.Title = "KevätHeijaste4";
 }
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
+@section head{
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/carousel.css" rel="stylesheet" />
     <style>
         div.background {
             background-image: url('../../Images/jääpeilipysty.jpg');
             border: 2px solid black;
-            margin: 50px;
+            margin: 75px;
             width: 1080px;
             height: 1920px;
         }
@@ -40,26 +46,24 @@
 
         div.col-sm-4 {
             /*margin-top: 1%;*/
-            margin-left:65%;
+            margin-left: 65%;
         }
 
-        img.square{
+        img.square {
             width: 350px;
             height: 100px;
             margin: 3px;
-            padding:0;    
-            
-        }
-        div.teksti {
-            position: absolute; /*rivittää tekstin ruutuun*/         
-            /*width: 100%; */         
-            font-size: 60px;
-            font-weight: bold;
-            padding-left:10%;    
-            text-align: justify;
-                    
+            padding: 0;
         }
 
+        div.teksti {
+            position: absolute; /*rivittää tekstin ruutuun*/
+            /*width: 100%; */
+            font-size: 60px;
+            font-weight: bold;
+            padding-left: 10%;
+            text-align: justify;
+        }
     </style>
 }
 
@@ -68,11 +72,10 @@
 <div class="background">
     <div class="transbox">
         <div class="transbox2">
-           
 
             <div class="col-sm-4">
                 <div class="teksti">TALVI</div>
-                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>      
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-sm-4">
@@ -89,6 +92,27 @@
                 <div class="teksti">SYKSY</div>
                 <a href="~/Sivu/Syksy" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
             </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div class="teksti">TALVI</div>
+                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div class="teksti">KEVÄT</div>
+                <a href="~/Sivu/Kevät" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div class="teksti">KESÄ</div>
+                <a href="~/Sivu/Kesä" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-sm-4">
+                <div class="teksti">SYKSY</div>
+                <a href="~/Sivu/Syksy" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
+            </div><!-- /.col-lg-4 -->
+
             <div class="col-sm-4">
                 <div class="teksti">TALVI</div>
                 <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
@@ -109,6 +133,7 @@
                 <a href="~/Sivu/Syksy" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
             </div><!-- /.col-lg-4 -->
             <div class="col-sm-4">
+
                 <div class="teksti">TALVI</div>
                 <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
             </div><!-- /.col-lg-4 -->
@@ -127,6 +152,7 @@
                 <div class="teksti">SYKSY</div>
                 <a href="~/Sivu/Syksy" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
             </div><!-- /.col-lg-4 -->
+
             <div class="col-sm-4">
                 <div class="teksti">TALVI</div>
                 <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
@@ -137,28 +163,7 @@
                 <a href="~/Sivu/Kevät" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-sm-4">
-                <div class="teksti">KESÄ</div>
-                <a href="~/Sivu/Kesä" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
-            </div><!-- /.col-lg-4 -->
 
-            <div class="col-sm-4">
-                <div class="teksti">SYKSY</div>
-                <a href="~/Sivu/Syksy" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-sm-4">
-                <div class="teksti">TALVI</div>
-                <a href="~/Sivu/Talvi" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
-            </div><!-- /.col-lg-4 -->
-
-            <div class="col-sm-4">
-                <div class="teksti">KEVÄT</div>
-                <a href="~/Sivu/Kevät" target="_blank"><img class="square" src="~/Images/jää.jpg" alt="jääbutton"></a>
-            </div><!-- /.col-lg-4 -->
-
- 
-            </div><!--transbox2 END-->
-        </div><!--transbox END-->
+        </div><!--transbox2 END-->
+    </div><!--transbox END-->
 </div><!--BACKGROUND END-->
-
-

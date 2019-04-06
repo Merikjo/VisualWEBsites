@@ -3,8 +3,12 @@
     ViewBag.Title = "KevätHeijaste2";
 }
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
+@section head{
     <style>
         div.background {
             background-image: url('../../Images/jääpeilipysty.jpg');
@@ -12,7 +16,6 @@
             margin: 50px;
             width: 1080px;
             height: 1920px;
-            
         }
 
         div.transbox {
@@ -45,25 +48,28 @@
             height: 1875px;
         }
 
-        div.pallot{
-            margin-top:5%;
+        div.pallot {
+            margin-top: 5%;
             opacity: 0.8;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             filter: drop-shadow(8px 8px 10px #313030);
-            filter: blur(5px);
-            
+            /*//filter: blur(5px);*/
+            width: 1035px;
+            height: 1875px;
         }
 
-        div.col-sm-4{
-            margin-top:5%;
+        div.col-sm-4 {
+            margin-top: 5%;
             text-align: center;
         }
-        p.Text{
+
+        p.Text {
             padding-top: 5px;
             padding-right: 5px;
             padding-bottom: 5px;
             padding-left: 5px;
         }
+
         .w3-myfont {
             font-family: "Comic Sans MS", /*cursive,*/, sans-serif;
             font-size: 150px;
@@ -73,15 +79,27 @@
 
 
 <!--BACKGROUND-->
-<div class="background">   
+<div class="background">
     <div class="transbox">
-        <div class="transbox2">   
+        <div class="transbox2">
             <div class="pallot">
 
                 <div class="col-sm-4">
                     <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
                 </div><!-- /.col-lg-4 -->
-            
+
+                <div class="col-sm-4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
+                    @*<h2>TALVI</h2>*@
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-sm-4">
+                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
+                    @*<h2>TALVI</h2>*@
+                </div><!-- /.col-lg-4 -->
+
+                <div class="clearfix"></div>
+
                 <div class="col-sm-4">
                     <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
                     @*<h2>TALVI</h2>*@
@@ -114,17 +132,7 @@
                     @*<h2>TALVI</h2>*@
                 </div><!-- /.col-lg-4 -->
 
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
-                    @*<h2>TALVI</h2>*@
-                </div><!-- /.col-lg-4 -->
-
                 <div class="clearfix"></div>
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
-                    @*<h2>TALVI</h2>*@
-
-                </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4">
                     <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
@@ -146,7 +154,6 @@
                 <div class="col-sm-4">
                     <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
                     @*<h2>TALVI</h2>*@
-
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-sm-4">
@@ -159,21 +166,11 @@
                     @*<h2>TALVI</h2>*@
                 </div><!-- /.col-lg-4 -->
 
-                <div class="col-sm-4">
-                    <a href="~/Sivu/Talvi" target="_blank"><img class="img-circle" src="~/Images/jää.jpg" alt="jääbutton" width="200" height="200"></a>
-                    @*<h2>TALVI</h2>*@
-                </div><!-- /.col-lg-4 -->
-
-                <div class="clearfix"></div>
-
-                <p>
+                <p class="w3-myfont">
                     Kevät<br />
-                    
                 </p>
-            
+
             </div>
         </div>
     </div>
 </div><!--BACKGROUND END-->
-
-

@@ -3,67 +3,88 @@
     ViewBag.Title = "Photos";
 }
 
-<h2>Photos</h2>
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-@section scripts{
-<style>
-    body {
-        margin: 30px;
-        background-color: #E9E9E9;
-    }
-
-    div.polaroid {
-        width: 294px;
-        padding: 10px 10px 20px 10px;
-        border: 1px solid #BFBFBF;
-        background-color: white;
-        box-shadow: 10px 10px 5px #aaaaaa;
-    }
-
-    div.rotate_right {
-        float: left;
-        -ms-transform: rotate(7deg); /* IE 9 */
-        -webkit-transform: rotate(7deg); /* Safari */
-        transform: rotate(7deg);
-    }
-
-    div.rotate_left {
-        float: left;
-        -ms-transform: rotate(-8deg); /* IE 9 */
-        -webkit-transform: rotate(-8deg); /* Safari */
-        transform: rotate(-8deg);
-    }
-</style>
+    @Scripts.Render("~/bundles/jqueryval")
 }
 
-<!--BACKGROUND-->
 
-<div class="polaroid rotate_right">
-    <img src="~/Images/haituvapalloblack.jpg" alt="Haituvapallo" width="213" height="284">
-    <p class="caption">Kesä mennyt on?</p>
-</div>
+@section head{
+    <style>
+        body {
+            margin: 30px;
+            background-color: #E9E9E9;
+        }
 
-<div class="polaroid rotate_left">
-    <img src="~/Images/elokuunkuu2014.jpg" alt="Elokuunkuu2014" width="213" height="284">
-    <p class="caption">Elokuun kuu</p>
-</div>
+        div.background {
+            /*background-image: url('../../Images/seinä.jpg');*/
+    
+            margin: 25px;
+            height: 100%;
+            width: 100%;
+            background-color:azure;
+        }
 
-<div class="polaroid rotate_right">
-    <img src="~/Images/ikkuna.jpg" alt="ikkuna" width="213" height="284">
-    <p class="caption">Tulevaisuus</p>
-</div>
+        div.polaroid {
+            width: 294px;
+            padding: 10px 10px 20px 10px;
+            border: 1px solid #BFBFBF;
+            background-color: white;
+            box-shadow: 10px 10px 5px #aaaaaa;
+        }
 
-<div class="polaroid rotate_left">
-    <img src="~/Images/ketju2.jpg" alt="Ketju2" width="213" height="284">
-    <p class="caption">Ketjussa mukana.</p>
-</div>
+        div.rotate_right {
+            float: left;
+            -ms-transform: rotate(7deg); /* IE 9 */
+            -webkit-transform: rotate(7deg); /* Safari */
+            transform: rotate(7deg);
+        }
 
-<div class="polaroid rotate_right">
-    <img src="~/Images/talvirinne.jpg" alt="Talv" width="213" height="284">
-    <p class="caption">Tulevaisuus</p>
-</div>
+        div.rotate_left {
+            float: left;
+            -ms-transform: rotate(-8deg); /* IE 9 */
+            -webkit-transform: rotate(-8deg); /* Safari */
+            transform: rotate(-8deg);
+        }
+    </style>
+}
 
-<div class="polaroid rotate_left">
-    <img src="~/Images/ketjut.jpg" alt="Ketjut" width="213" height="284">
-    <p class="caption">Ketjutetut.</p>
-</div>
+<!-- !PAGE CONTENT! -->
+  
+        <!--BACKGROUND-->
+
+
+            <h2>Photos</h2>
+
+            <div class="polaroid rotate_right">
+                <img src="~/Images/haituvapalloblack.jpg" alt="Haituvapallo" width="213" height="284">
+                <p class="caption">Kesä mennyt on?</p>
+            </div>
+
+            <div class="polaroid rotate_left">
+                <img src="~/Images/elokuunkuu2014.jpg" alt="Elokuunkuu2014" width="213" height="284">
+                <p class="caption">Elokuun kuu</p>
+            </div>
+
+            <div class="polaroid rotate_right">
+                <img src="~/Images/ikkuna.jpg" alt="ikkuna" width="213" height="284">
+                <p class="caption">Tulevaisuus</p>
+            </div>
+
+            <div class="polaroid rotate_left">
+                <img src="~/Images/ketju2.jpg" alt="Ketju2" width="213" height="284">
+                <p class="caption">Ketjussa mukana.</p>
+            </div>
+
+            <div class="polaroid rotate_right">
+                <img src="~/Images/talvirinne.jpg" alt="Talv" width="213" height="284">
+                <p class="caption">Tulevaisuus</p>
+            </div>
+
+            <div class="polaroid rotate_left">
+                <img src="~/Images/ketjut.jpg" alt="Ketjut" width="213" height="284">
+                <p class="caption">Ketjutetut.</p>
+            </div>
+ 

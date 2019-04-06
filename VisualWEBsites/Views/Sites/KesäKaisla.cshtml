@@ -3,8 +3,12 @@
     ViewBag.Title = "KesäKaisla";
 }
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
+@section head{
     <style>
         div.background {
             background-image: url('../../Images/kaislapilari.jpg');
@@ -17,7 +21,7 @@
 
         div.transbox {
             margin: 5px;
-            background-color: #1a1a00;/*t.vihreä*/
+            background-color: #1a1a00; /*t.vihreä*/
             border: 1px solid black;
             opacity: 0.5;
             filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -27,7 +31,7 @@
 
         div.transbox2 {
             margin: 5px;
-            background-color: #d6d6c2;/*vihreä*/
+            background-color: #d6d6c2; /*vihreä*/
             border: 1px solid black;
             opacity: 0.8;
             filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -37,7 +41,7 @@
 
         div.transbox3 {
             margin: 5px;
-            background-color: #adebeb;/*turkoosi*/
+            background-color: #adebeb; /*turkoosi*/
             border: 1px solid black;
             opacity: 0.9;
             filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -49,16 +53,17 @@
             margin-left: 10%;
             margin-top: 15%;
             font-weight: bold;
-            color: #1a1a00;/*t.vihreä*/
+            color: #1a1a00; /*t.vihreä*/
             font-size: 300px;
             width: 1035px;
             height: 1875px;
         }
+
         div.transbox p1 {
             margin-left: 10%;
             margin-top: 5%;
             font-weight: bold;
-            color:#ffffff;
+            color: #ffffff;
             font-size: 300px;
             width: 1035px;
             height: 1875px;
@@ -70,12 +75,10 @@
 <div class="background">
     <div class="transbox">
         <div class="transbox2">
-        <div class="transbox3">
-            <p>KESÄ</p>
-            <p1>KESÄ</p1>
-        </div>
+            <div class="transbox3">
+                <p>KESÄ</p>
+                <p1>KESÄ</p1>
+            </div>
         </div>
     </div>
 </div><!--BACKGROUND END-->
-
-

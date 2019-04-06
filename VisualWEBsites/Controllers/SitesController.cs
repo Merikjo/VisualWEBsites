@@ -297,6 +297,10 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
+        public ActionResult Carousel()
+        {
+            return View();
+        }
     }
 }
     

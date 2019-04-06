@@ -4,6 +4,12 @@
     background-color:azure;
 }
 
+bodi {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: azure;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -22,6 +28,21 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
 
 

@@ -3,13 +3,19 @@
     ViewBag.Title = "OppositeSite";
 }
 
-@section scripts{
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@section head{
 
     <style>
         div.background {
             background-image: url('../../Images/seinä.jpg');
             border: 2px solid black;
-            margin: 0px;
+            margin: 25px;
             height: 658px;
             width: 1170px;
         }
@@ -44,26 +50,20 @@
             height: 613px;
             width: 1125px;
         }
-
-       
     </style>
 }
-
 
 <!--BACKGROUND-->
 <div class="background">
     <div class="transbox">
         <div class="transbox2">
             <p>
-              Talvi Kevät Kesä Syksy
-             
+                Talvi Kevät Kesä Syksy
             </p>
-
-           
-
-
-            </div>
-  
+        </div>
     </div>
 </div><!--BACKGROUND END-->
 
+<script src="~/Scripts/jquery-2.2.4.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>

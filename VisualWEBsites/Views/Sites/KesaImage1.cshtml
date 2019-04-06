@@ -1,18 +1,22 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "KesaImage1";
 }
 
-@section scripts{
+@section scripts {
+<script src="~/Scripts/jquery-2.2.4.js"></script>
 
-<link href="~/Content/carousel.css" rel="stylesheet" />
-<link href="~/Content/Site.css" rel="stylesheet" />
+@Scripts.Render("~/bundles/jqueryval")
+}
+
+@section head{
+
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <style>
         div.background {
             background-image: url('../../Images/hiekka.jpg');
             border: 2px solid black;
             width: 1170px;
-            
         }
 
         div.transbox {
@@ -22,7 +26,6 @@
             opacity: 0.5;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             width: 1155px;
-            
         }
 
         div.transbox2 {
@@ -40,22 +43,17 @@
             color: #ffffff;
             font-size: 500px;
             width: 1125px;
-            padding-left:2px;
-            padding-right:2px;
+            padding-left: 2px;
+            padding-right: 2px;
         }
     </style>
 }
 
-
-
-    <!--BACKGROUND-->
-    <div class="background">
-        <div class="transbox">
-            <div class="transbox2">
-                <p>KESÄ</p>
-            </div>
+<!--BACKGROUND-->
+<div class="background">
+    <div class="transbox">
+        <div class="transbox2">
+            <p>KESÄ</p>
         </div>
-    </div><!--BACKGROUND END-->
-
-
-
+    </div>
+</div><!--BACKGROUND END-->

@@ -3,70 +3,68 @@
     ViewBag.Title = "Leimasin3";
 }
 
-<!-- Custom styles for this template -->
-<link href="~/Sectionscripts/carousel.css" rel="stylesheet" />
-<link href="~/Sectionscripts/Site.css" rel="stylesheet" />
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
-<script src="http://code.jquery.com/jquery.min.js"></script>
 
-<script src="~/Scripts/jquery-3.1.1.js"></script>
-<script src="~/Scripts/jquery-2.2.4.js"></script>
-
-@section scripts{
-
+@section head{
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Mysite.css" rel="stylesheet" />
     <style>
-         div.background {
+        div.background {
             background-image: url('../../images/leimaseina.jpg');
             border: 2px solid black;
             margin: 0px;
-            width:1080px;
+            width: 1080px;
             height: 1920px;
         }
+
         div.canvas {
             margin: 5px;
             background-color: #ffffff;
             opacity: 0.5;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             text-align: center;
-            width:1065px;
+            width: 1065px;
             height: 1905px;
         }
-       
+
         div.transbox2 {
-            margin: 5px;     
+            margin: 5px;
             background-color: #b6d8dc; /*t.harmaa*/
             border: 1px solid black;
             opacity: 0.8;
             filter: alpha(opacity=60); /* For IE8 and earlier */
             width: 1052px;
-            height: 1892px;       
+            height: 1892px;
         }
 
-        div.transbox3 {                 
+        div.transbox3 {
             margin-top: 50%;
         }
 
-          .img-circle {          
-            border-radius:50%;     
-            width:800px;
-            height:800px;                
-}
+        .img-circle {
+            border-radius: 50%;
+            width: 800px;
+            height: 800px;
+        }
     </style>
-
 }
 
 <body>
-   
     <!--BACKGROUND-->
-<div class="background">
-    <div class="canvas">
-        <div class="transbox2">       
-            <div class="transbox3">
-                <div id="myDIVpyorre3"><img class="img-circle" src="~/images/leimaseina.jpg" alt="leimaseina">
+    <div class="background">
+        <div class="canvas">
+            <div class="transbox2">
+                <div class="transbox3">
+                    <div id="myDIVpyorre3">
+                        <img class="img-circle" src="~/images/leimaseina.jpg" alt="leimaseina">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div><!--BACKGROUND END-->
-
+    </div><!--BACKGROUND END-->
 </body>

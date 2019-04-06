@@ -3,28 +3,26 @@
     ViewBag.Title = "Leimasin2";
 }
 
-<!-- Custom styles for this template -->
-<link href="~/Sectionscripts/carousel.css" rel="stylesheet" />
-<link href="~/Sectionscripts/Site.css" rel="stylesheet" />
 
-<script src="http://code.jquery.com/jquery.min.js"></script>
-
-<script src="~/Scripts/jquery-3.1.1.js"></script>
-<script src="~/Scripts/jquery-2.2.4.js"></script>
-<script src="https://apis.google.com/js/client.js?onload=checkAuth" gapi_processed="true"></script>
+  
 
 
+@section head{
+    <!-- Custom styles for this template -->
+    <link href="~/Sectionscripts/carousel.css" rel="stylesheet" />
+    <link href="~/Sectionscripts/Site.css" rel="stylesheet" />
 
     <style>
-         div.background {
+        div.background {
             background-image: url('../../images/leimaseina.jpg');
             border: 2px solid black;
             margin: 0px;
-            width:1080px;
+            width: 1080px;
             height: 1920px;
         }
-         canvas {
-              background-image: url('../../images/leimaseina.jpg');
+
+        canvas {
+            background-image: url('../../images/leimaseina.jpg');
             /*position: absolute;
             margin-top: 50%;
             margin-bottom: 50%;
@@ -35,15 +33,17 @@
             /*text-align: center;
             width:1080px;
             height: 1920px;*/
-            border:1px solid #d3d3d3;
+            border: 1px solid #d3d3d3;
             background-color: #f1f1f1;
-
         }
-       </style>
+    </style>
+}
 
 <body onload="startGame()">
-   
-        <div class="canvas">
+
+    <div class="canvas">
+
+        @section scripts {
             <script>
                 var myGamePiece;
                 var myBackground;
@@ -90,19 +90,18 @@
                         ctx = myGameArea.context;
                         if (type == "image") {
                             ctx.drawImage(this.image,
-                            this.x,
-                            this.y,
-                            this.width, this.height);
+                                this.x,
+                                this.y,
+                                this.width, this.height);
                         }
-                            ctx.save();
-                            ctx.translate(this.x, this.y);
-                            ctx.rotate(this.angle);
-                            ctx.fillStyle = color;
-                            ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
-                            ctx.restore();
-                        }
+                        ctx.save();
+                        ctx.translate(this.x, this.y);
+                        ctx.rotate(this.angle);
+                        ctx.fillStyle = color;
+                        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
+                        ctx.restore();
                     }
-               
+                }
 
                 function updateGameArea() {
                     myGameArea.clear();
@@ -110,10 +109,12 @@
                     myGamePiece.update();
                 }
 
-
-
             </script>
-        </div>
-  
 
+            <script src="~/Scripts/jquery-2.2.4.js"></script>
+            <script src="https://apis.google.com/js/client.js?onload=checkAuth" gapi_processed="true"></script>
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+
+        </div>
 </body>
