@@ -197,7 +197,6 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <None Include="Properties\PublishProfiles\VisualWEBsitesNew - Web Deploy.pubxml" />
     <Content Include="Images\Sirkkeli.png" />
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -216,6 +215,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Properties\PublishProfiles\VisualWEBsitesByjm - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -247,15 +247,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites %285%29.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites %286%29.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %283%29.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %284%29.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy %285%29.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites.pubxml" />
-    <None Include="Properties\PublishProfiles\VisualWEBsites2 - Web Deploy.pubxml" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <Content Include="Images\elokuunkuu2014.jpg" />
     <Content Include="Images\FishMovie.mp4" />
@@ -454,7 +445,6 @@
     <Content Include="Images\WP_20160823_11_43_37_Pro_LI.jpg" />
     <Content Include="Images\WP_20160823_11_49_01_Pro_LI.jpg" />
     <Content Include="Images\Älypuhelin.jpg" />
-    <Content Include="Properties\PublishProfiles\VisualWEBsites - Web Deploy.pubxml.user" />
     <Content Include="Scripts\carousel.js" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />

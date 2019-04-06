@@ -2,12 +2,19 @@
     ViewBag.Title = "VisualWEBsites";
 }
 
-@section scripts{
-    <link href="~/Content/carousel.css" rel="stylesheet" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
+@section scripts {
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    @Scripts.Render("~/bundles/jqueryval")
 }
 
 @section head{
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Mysite.css" rel="stylesheet" />
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -17,6 +24,13 @@
             -ms-user-select: none;
             user-select: none;
         }
+
+        div.col-lg-3 {
+            margin-top: 5%;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     </style>
 }
 
@@ -25,7 +39,8 @@
         <!-- WRAPPER
         ================================================== -->
         <div class="wrapper">
-
+            <!-- Container
+            ================================================== -->
             <div class="container">
 
                 <!-- Carousel
@@ -33,28 +48,27 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0"></li>
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
 
                     <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <img xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" src="~/Images/Talvenkajo.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
+                        <div class="carousel-item active">
+                            <img class="bd-placeholder-img" role="img" src="~/Images/Talvenkajo.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
                             <div class="container">
                                 <div class="carousel-caption text-left">
                                     <h1>Talvimaisemia</h1>
                                     <p>Rentoudu ja nauti näistä upeista talvimaisemista.</p>
                                     <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
-                                    <p><a class="btn btn-lg btn-primary" role="button" href="~/Views/Sites/Talvikuvat.cshtml"> target="_blank">Talvikuvia</a></p>
-
+                                    <p><a class="btn btn-lg btn-primary" role="button" href="~/Views/Sites/Talvikuvat.cshtml" target="_blank">Talvikuvia</a></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="carousel-item carousel-item-left">
-                            <img xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" src="~/Images/kevät2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
+                            <img class="bd-placeholder-img" role="img" src="~/Images/kevät2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Kevätmaisemia</h1>
@@ -65,7 +79,7 @@
                         </div>
 
                         <div class="carousel-item carousel-item-next carousel-item-left">
-                            <img xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" src="~/Images/kesälaituri.jpg" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
+                            <img class="bd-placeholder-img" role="img" src="~/Images/kesälaituri.jpg" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Kesämaisemia</h1>
@@ -76,7 +90,7 @@
                         </div>
 
                         <div class="carousel-item carousel-item-next carousel-item-left">
-                            <img xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" src="~/Images/syksy2.jpg" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
+                            <img class="bd-placeholder-img" role="img" src="~/Images/syksy2.jpg" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
                             <div class="container">
                                 <div class="carousel-caption text-right">
                                     <h1>Syksymaisemia</h1>
