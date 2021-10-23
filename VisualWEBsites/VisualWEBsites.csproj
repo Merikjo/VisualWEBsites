@@ -103,6 +103,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\..\VS2019-WPF\Tehtävä\AlyTaloSmartWPF\AlyTalo\bin\Debug\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -239,6 +242,7 @@
     <Content Include="Scripts\esm\popper-utils.js.map" />
     <Content Include="Content\Ajankulua.css" />
     <Content Include="Content\carousel.css" />
+    <None Include="Properties\PublishProfiles\VisualWEBsitesByjm - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -522,7 +526,6 @@
     <Content Include="Images\WP_20160718_16_43_32_Pro_LI.jpg" />
     <Content Include="Images\WP_20160727_15_44_46_Pro_LI.jpg" />
     <Content Include="Images\WP_20160727_15_45_29_Pro_LI.jpg" />
-    <Content Include="Images\WP_20160807_21_38_40_Pro_LI.jpg" />
     <Content Include="Images\WP_20160807_21_39_12_Pro_LI.jpg" />
     <Content Include="Images\WP_20160807_21_41_35_Pro_LI.jpg" />
     <Content Include="Images\WP_20160823_11_43_37_Pro_LI.jpg" />
@@ -667,6 +670,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Views\Sites\JääKidePyorre.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
