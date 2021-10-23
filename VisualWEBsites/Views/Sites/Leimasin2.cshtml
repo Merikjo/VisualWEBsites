@@ -10,18 +10,17 @@
 @section head{
     <!-- Custom styles for this template -->
     <link href="~/Sectionscripts/carousel.css" rel="stylesheet" />
-    <link href="~/Sectionscripts/Site.css" rel="stylesheet" />
 
     <style>
         div.background {
             background-image: url('../../images/leimaseina.jpg');
             border: 2px solid black;
             margin: 0px;
-            width: 1080px;
+            width: 100%;
             height: 1920px;
         }
 
-        canvas {
+        .canvas {
             background-image: url('../../images/leimaseina.jpg');
             /*position: absolute;
             margin-top: 50%;
@@ -41,9 +40,10 @@
 
 <body onload="startGame()">
 
-    <div class="canvas">
+    <div class="canvas" >
 
         @section scripts {
+                <script src="https://apis.google.com/js/client.js?onload=checkAuth" gapi_processed="true"></script>
             <script>
                 var myGamePiece;
                 var myBackground;
@@ -61,7 +61,7 @@
 
                     start: function () {
                         this.canvas.width = 1080;
-                        this.canvas.height = 1920;
+                        this.canvas.height = 1920
                         this.context = this.canvas.getContext("2d");
                         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
                         this.frameNo = 0;
@@ -108,13 +108,10 @@
                     myGamePiece.angle += 1 * Math.PI / 180;
                     myGamePiece.update();
                 }
-
             </script>
 
-            <script src="~/Scripts/jquery-2.2.4.js"></script>
-            <script src="https://apis.google.com/js/client.js?onload=checkAuth" gapi_processed="true"></script>
-            @Scripts.Render("~/bundles/jqueryval")
+            
         }
 
-        </div>
+    </div>
 </body>
