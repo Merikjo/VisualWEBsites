@@ -9,40 +9,39 @@
     <style>
         div.background {
             background-image: url('../../Images/neliöpultti.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             border: 2px solid black;
-            margin: 0 auto;
-            /*opacity:0.9;*/
-            width: 1080px;
+            width: 100%;
             height: 1920px;
+            margin-top: 5px;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox {
-            margin: 5px;
             background-color: #ffffff;
             border: 1px solid black;
             opacity: 0.5;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1065px;
-            height: 1905px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox2 {
-            margin: 5px;
             background-color: #d6d6c2;
             border: 1px solid black;
             opacity: 0.8;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1052px;
-            height: 1892px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox p {
-            margin: 35%;
+            padding: 35%;
             font-weight: bold;
             color: #ffffff;
             font-size: 200px;
-            width: 1035px;
-            height: 1875px;
+            width: 100%;
         }
     </style>
 }
@@ -52,7 +51,11 @@
 <div class="background">
     <div class="transbox">
         <div class="transbox2">  
-             <p>TALVI KEVÄT KESÄ SYKSY</p>          
+             <p>TALVI <br />
+                KEVÄT <br />
+                KESÄ <br />
+                SYKSY <br />
+             </p>          
         </div>
     </div>
 </div><!--BACKGROUND END-->

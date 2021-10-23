@@ -4,52 +4,46 @@
 }
 
 @section scripts{
-<script src="~/Scripts/modernizr-2.8.3.js"></script>
-<script src="~/Scripts/bootstrap.min.js"></script>
-<script src="/Scripts/bootstrap.js"></script>
-<script src="/Scripts/respond.js"></script>
-<script src="~/Scripts/jquery-3.1.1.js"></script>
-<script src="~/Scripts/jquery-2.2.4.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<link href="~/Sectionscripts/carousel.css" rel="stylesheet" />
-<link href="~/Sectionscripts/Site.css" rel="stylesheet" />
-<link href="~/Sectionscripts/YearsGoOn.css" rel="stylesheet" />
-@Scripts.Render("~/bundles/jqueryval")
-
+  
 }
 
 
 @section head {
+    <link href="~/Content/YearsGoOn.css" rel="stylesheet" />
+    <link href="~/Content/carousel.css" rel="stylesheet" />
 
-<style>
+    <style>
 
-    div.background {
-        background-image: url('../../Images/jääpeili.jpg');
-        border: 2px solid black;
-        margin-top: 50px;
-        height: 1920px;
-        width: 1920px;
-    }
+        div.background {
+            background-image: url('../../Images/jääpeili.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid black;
+            width: 100%;
+            height: 1920px;
+            padding: 8px 8px 8px 8px;
+            overflow: auto;
+            margin-top: 5px;
+        }
 
         div.transbox {
-            margin: 5px;
-            background-color: #000000;/*valkoinen*/
+            background-color: #000000; /*valkoinen*/
             border: 1px solid black;
             opacity: 0.5;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            height: 1905px;
-            width: 1905px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
+            overflow: auto;
         }
 
         div.transbox2 {
-            margin: 5px;
-            background-color: #666666;/*harmaa*/
+            background-color: #666666; /*harmaa*/
             border: 1px solid black;
             opacity: 0.8;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            height: 1892px;
-            width: 1892px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
+            overflow: auto;
         }
 
         /*div.transbox p {
@@ -61,135 +55,125 @@
             width: 1875px;
             height: 1875px;
         }*/
-    
+
         div.move {
-            width: 1920px;
-            height: 100px;
-            opacity:0.8;
-            background-color: #000000;/*musta*/
+            opacity: 0.8;
+            background-color: #000000; /*musta*/
             font-weight: bold;
             position: relative;
             -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
             animation: mymove 8s infinite;
         }
+
         div.move2 {
-            width: 1920px;
-            height: 100px;
-            opacity:0.8;
-            background-color: #000000;/*musta*/
+            opacity: 0.8;
+            background-color: #000000; /*musta*/
             font-weight: bold;
             position: relative;
             -webkit-animation: mymove2 5s infinite; /* Chrome, Safari, Opera */
             animation: mymove2 8s infinite;
         }
 
-         /* Chrome, Safari, Opera */
+        /* Chrome, Safari, Opera */
         #div1 {
-
             -webkit-animation-timing-function: linear;
-            font-size:100px;         
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div2 {
             -webkit-animation-timing-function: ease;
-            font-size:100px;
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div3 {
             -webkit-animation-timing-function: ease-in;
-            font-size:100px;
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div4 {
             -webkit-animation-timing-function: ease-out;
-            font-size:100px;
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div5 {
             -webkit-animation-timing-function: ease-in-out;
-            font-size:100px;
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         /* Standard syntax */
 
         #div1 {
             animation-timing-function: linear;
-             font-size:100px;
-             color:#ffffff;
+            font-size: 100px;
+            color: #ffffff;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div2 {
             animation-timing-function: ease;
-            font-size:100px;
-            color:#ccffcc;
+            font-size: 100px;
+            color: #ccffcc;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div3 {
             animation-timing-function: ease-in;
-            font-size:100px;
-            color:#ffb3d1;
+            font-size: 100px;
+            color: #ffb3d1;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div4 {
             animation-timing-function: ease-out;
-            font-size:100px;
-            color:#ff7733;
+            font-size: 100px;
+            color: #ff7733;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         #div5 {
             animation-timing-function: ease-in-out;
-            font-size:100px;
-            color:#b3ffff;
+            font-size: 100px;
+            color: #b3ffff;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
-        .clearfix {
-            overflow: auto;
-        }
-
-</style>
+    </style>
 }
 
-    <!--BACKGROUND-->
-    <div class="background">
+<!--BACKGROUND-->
+<div class="background">
     <div class="transbox">
         <div class="transbox2">
-            <br />
-            <div class="clearfix">
                 <div id="div1" class="move">Talvi....Talvi....Talvi...Talvi...Talvi....Talvi....</div>
-                <br />
                 <div id="div1" class="move2">Talvi....Talvi....Talvi...Talvi...Talvi....Talvi..</div>
-                <br />
                 <div id="div2" class="move">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.......</div>
-                <br />
                 <div id="div2" class="move2">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.....</div>
-                <br />
                 <div id="div3" class="move">Kesä....Kesä......Kesä.....Kesä......Kesä...Kesä....</div>
-                <br />
                 <div id="div3" class="move2">Kesä....Kesä......Kesä.....Kesä....Kesä...Kesä....</div>
-                <br />
                 <div id="div4" class="move">Syksy....Syksy...Syksy........Syksy.....Syksy.......</div>
-                <br />
                 <div id="div4" class="move2">Syksy....Syksy...Syksy........Syksy.....Syksy.....</div>
-                <br />
                 <div id="div5" class="move">Talvi........Talvi........Talvi....Talvi.......Talvi</div>
-                <br />
                 <div id="div5" class="move2">Talvi........Talvi........Talvi....Talvi.....Talvi</div>
-                <br />
                 <div id="div2" class="move">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.......</div>
-                <br />
                 <div id="div2" class="move2">Kevät...Kevät...Kevät...Kevät...Kevät...Kevät.....</div>
-                <br />
                 <div id="div3" class="move">Kesä....Kesä......Kesä.....Kesä......Kesä...Kesä....</div>
-                <br />
                 <div id="div3" class="move2">Kesä....Kesä......Kesä.....Kesä....Kesä...Kesä....</div>
-                <br />
                 <div id="div4" class="move">Syksy....Syksy...Syksy........Syksy.....Syksy.......</div>
-                <br />
-                <div id="div4" class="move2">Syksy....Syksy...Syksy........Syksy.....Syksy.....</div>
-                <br />
-
-            </div></div>     
+                <div id="div4" class="move2">Syksy....Syksy...Syksy........Syksy.....Syksy.....</div>   
+        </div>
     </div>
-    </div><!-- /.background END -->
-
-
-
+</div><!-- /.background END -->

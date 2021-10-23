@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  /*padding-bottom: 40px;*/
   color: #5a5a5a;/*harmaa*/
   margin:0;
   padding:0;
@@ -13,13 +12,8 @@ body {
 .wrapper {
     color: rgb(220, 220, 220); /*harmaa*/
     margin: 0px auto;
-    /*padding:0;*/
-    /*background-color: rgb(254,254,254);/*valkoinen*/
-    /*opacity:0.9;*/
     background-image: url('../Images/jaatausta.jpg');
     background-repeat: repeat;
-    /*padding-right: 15px;
-    padding-left: 15px;*/
     margin-right: auto;
     margin-left: auto;
     width: auto;
@@ -60,24 +54,7 @@ body {
   width:100%;
   
 }
-@media (min-width: 768px) {
-  .container {
-    /*width: 750px;*/
-    width:100%;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    /*width: 970px;*/
-    width:100%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    /*width: 1170px;*/
-    width:100%;
-  }
-}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -91,8 +68,6 @@ body {
 
 
 /*<-poimittu bootstrap.css*/
-
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -106,9 +81,6 @@ body {
   /*padding-left: 0px;*/
   /*margin-right: auto;*/
   /*margin-left: auto;*/
-  
- 
-
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -129,32 +101,6 @@ body {
   height: 600px;
    
 }
-/*lisätty 6.4.2019*/
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-@media (min-width: 768px) {
-  .carousel {
-    /*width: 750px;*/
-    width:100%;
-  }
-}
-@media (min-width: 992px) {
-  .carousel {
-    /*width: 970px;*/
-    width:100%;
-  }
-}
-@media (min-width: 1200px) {
-    .carousel {
-        /*width: 1170px;*/
-        width:100%;
-    }
-}
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -185,7 +131,6 @@ p {
 h2 {
     color:rgb(53, 58, 64);
     font-size:24px;
-
    }
 
 /* Featurettes
@@ -202,10 +147,35 @@ h2 {
   letter-spacing: -1px;
 }
 
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (min-width: 768px) {
+    .container {
+        /*width: 750px;*/
+        width: 100%;
+    }
+
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+
+    .carousel {
+        /*width: 750px;*/
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        /*width: 970px;*/
+        width: 100%;
+    }
+
+    .carousel {
+        /*width: 970px;*/
+        width: 100%;
+    }
+}
 
 @media (min-width: 1000px) {
     /* Navbar positioning foo */
@@ -215,16 +185,30 @@ h2 {
 }
 
 @media (min-width: 1190px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+    .featurette-heading {
+        margin-top: 120px;
+    }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        /*width: 1170px;*/
+        width: 100%;
+    }
+
+    .carousel {
+        /*width: 1170px;*/
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:1000px) {
     body {
         background-color: rgb(220, 220, 220);
         background-image: url("jaatausta.jpg");
     }
 }
+
   .navbar-wrapper .container {
     padding-right: 10px;
     padding-left: 10px;

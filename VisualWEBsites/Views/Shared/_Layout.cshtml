@@ -9,39 +9,131 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">*@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="icon" href="../../favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    @*<script src="~/Scripts/jquery-2.2.4.js"></script>
-    <script src="~/Scripts/respond.js"></script>*@
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jqueryval")
     @RenderSection("head", required: false)
 
-
-    @*//<script type="text/javascript">*@
-    @*//var appInsights = window.appInsights || function (config) {
-        //    function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
-        //}({
-        //    instrumentationKey: "1a0213e6-e58b-46ec-83e0-4489b56725a5"
-        //});
-
-        //window.appInsights = appInsights;
-        //appInsights.trackPageView();
-        @*//</script>*@
-
-    @*<script type="text/javascript">
-            javascript: (function () { var s = document.createElement("script"); s.onload = function () { bootlint.showLintReportForCurrentDocument([]); }; s.src = "https://maxcdn.bootstrapcdn.com/bootlint/latest/bootlint.min.js"; document.body.appendChild(s) })();
-        </script>*@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="font-size: 18px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">VISUAL WEB SITES (@ViewBag.LoggedStatus)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="~/Home/Login">Login (@Session["UserName"]) <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="~/Home/Logout">Logout <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="~/Sites/Ajankulua">Ajankulua</a>
+                            <a class="dropdown-item" href="~/Sites/ArtWall">ArtWall</a>
+                            <a class="dropdown-item" href="~/Sites/FishMovie">FishMovie</a>
+                            <a class="dropdown-item" href="~/Sites/JaaPyorre">JaaPyorre</a>
+                            <a class="dropdown-item" href="~/Sites/KevatHeijastePyorre">KevätHeijastePyorre</a>
+                            <a class="dropdown-item" href="~/Sites/KevätKaiPuu">KevätKaiPuu</a>
+                            <a class="dropdown-item" href="~/Sites/Leimasin">Leimasin</a>
+                            <a class="dropdown-item" href="~/Sites/Leimasin3">Leimasin3</a>
+                            <a class="dropdown-item" href="~/Sites/Pearls">Pearls</a>
+                            <a class="dropdown-item" href="~/Sites/MerryXmas2016">MerryXmas2016</a>
+                            <a class="dropdown-item" href="~/Sites/Move">Move</a>
+                            <a class="dropdown-item" href="~/Sites/Pilvet">Pilvet</a>
+                            <a class="dropdown-item" href="~/Sites/Pilvet2">Pilvet2</a>
+                            <a class="dropdown-item" href="~/Sites/Ratas">Ratas</a>
+                            <a class="dropdown-item" href="~/Sites/Ratas2">Ratas2</a>
+                            <a class="dropdown-item" href="~/Sites/Sirkkeli">Sirkkeli</a>
+                            <a class="dropdown-item" href="~/Sites/Syksy">Syksy</a>
+                            <a class="dropdown-item" href="~/Sites/Timegoesby">Timegoesby</a>
+                            <a class="dropdown-item" href="~/Sites/Timegoesby2">Timegoesby2</a>
+                            <a class="dropdown-item" href="~/Sites/VesiKiviPyorre2">VesiKiviPyorre2</a>
+                            <a class="dropdown-item" href="~/Sites/YearsGoOn">YearsGoOn</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="~/Sites/ArtWall2">ArtWall2</a>
+                            <a class="dropdown-item" href="~/Sites/AikaTapit">AikaTapit</a>
+                            <a class="dropdown-item" href="~/Sites/ButtOn">ButtOn</a>
+                            <a class="dropdown-item" href="~/Sites/Ikkuna">Ikkuna</a>
+                            <a class="dropdown-item" href="~/Sites/Ikkuna2">Ikkuna2</a>
+                            <a class="dropdown-item" href="~/Sites/KesaImage1">KesaImage1</a>
+                            <a class="dropdown-item" href="~/Sites/Kesä">Kesä</a>
+                            <a class="dropdown-item" href="~/Sites/KesäHaituva">KesäHaituva</a>
+                            <a class="dropdown-item" href="~/Sites/KesäHaituva2">KesäHaituva2</a>
+                            <a class="dropdown-item" href="~/Sites/KesäHaituva3">KesäHaituva3</a>
+                            <a class="dropdown-item" href="~/Sites/KesäKaisla">KesäKaisla</a>
+                            <a class="dropdown-item" href="~/Sites/KesäVuokot">KesäVuokot</a>
+                            <a class="dropdown-item" href="~/Sites/KesäVuokot2">KesäVuokot2</a>
+                            <a class="dropdown-item" href="~/Sites/Ketju">Ketju</a>
+                            <a class="dropdown-item" href="~/Sites/Ketjussa">Ketjussa</a>
+                            <a class="dropdown-item" href="~/Sites/Ketjutus">Ketjutus</a>
+                            <a class="dropdown-item" href="~/Sites/KevatImage1">KevatImage1</a>
+                            <a class="dropdown-item" href="~/Sites/Kevät">Kevät</a>
+                            <a class="dropdown-item" href="~/Sites/KevätHeijaste">KevätHeijaste</a>
+                            <a class="dropdown-item" href="~/Sites/KevätHeijaste2">KevätHeijaste2</a>
+                            <a class="dropdown-item" href="~/Sites/KevätHeijaste3">KevätHeijaste3</a>
+                            <a class="dropdown-item" href="~/Sites/KevätHeijaste4">KevätHeijaste4</a>
+                            <a class="dropdown-item" href="~/Sites/OppositeSite">OppositeSite</a>
+                            <a class="dropdown-item" href="~/Sites/RautaAika">RautaAika</a>
+                            <a class="dropdown-item" href="~/Sites/Syyskaisla">Syyskaisla</a>
+                            <a class="dropdown-item" href="~/Sites/Talvi">Talvi</a>
+                            <a class="dropdown-item" href="~/Sites/TalviImage1">TalviImage1</a>
+                            <a class="dropdown-item" href="~/Sites/TalviImage2">TalviImage2</a>
+                            <a class="dropdown-item" href="~/Sites/TalviImage3">TalviImage3</a>
+                            <a class="dropdown-item" href="~/Sites/TyöPaja">TyöPaja</a>
+                            <a class="dropdown-item" href="~/Sites/VesiKivi">VesiKivi</a>
+                            <a class="dropdown-item" href="~/Sites/Voimala">Voimala</a>
+                            <a class="dropdown-item" href="~/Sites/Vuodenaika">Vuodenaika</a>
+                            <a class="dropdown-item" href="~/Sites/Vuodenaika2">Vuodenaika2</a>
+                            <a class="dropdown-item" href="~/Sites/Vuodenaika3">Vuodenaika3</a>
+                            <a class="dropdown-item" href="~/Sites/ÄlyPuhelin">ÄlyPuhelin</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="~/Sites/Carousel">Carousel</a>
+
+                            <a class="dropdown-item" href="~/Sites/JaaPyorre2">JaaPyorre2</a>
+                            <a class="dropdown-item" href="~/Sites/Kesakuvat">Kesakuvat</a>
+                            <a class="dropdown-item" href="~/Sites/KesaPyora">KesaPyora</a>
+                            <a class="dropdown-item" href="~/Sites/Kevätkuvat">Kevätkuvat</a>
+                            <a class="dropdown-item" href="~/Sites/Leimasin2">Leimasin2</a>
+                            <a class="dropdown-item" href="~/Sites/Photos">Photos</a>
+                            <a class="dropdown-item" href="~/Sites/Syksykuvat">Syksykuvat</a>
+                            <a class="dropdown-item" href="~/Sites/Talvikuvat">Talvikuvat</a>
+                            <a class="dropdown-item" href="~/Sites/VesiKiviPyorre">VesiKiviPyorre</a>
+
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    @*<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="font-size: 18px;">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault">
             <span class="navbar-toggler-icon"></span>
@@ -97,7 +189,7 @@
                         <a class="dropdown-item" href="~/Sites/KevätKaiPuu">KevätKaiPuu</a>
                         <a class="dropdown-item" href="~/Sites/Leimasin">Leimasin</a>
                         <a class="dropdown-item" href="~/Sites/Leimasin2">Leimasin2</a>
-                        <a class="dropdown-item" href="~/Sites/Leimasin3">Leimasin3</a>             
+                        <a class="dropdown-item" href="~/Sites/Leimasin3">Leimasin3</a>
                     </div>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="dropdown01" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">Dropdown</a>
@@ -122,8 +214,8 @@
                         <a class="dropdown-item" href="~/Sites/TalviImage2">TalviImage2</a>
                         <a class="dropdown-item" href="~/Sites/TalviImage3">TalviImage3</a>
                         <a class="dropdown-item" href="~/Sites/Talvikuvat">Talvikuvat</a>
-                        <a class="dropdown-item" href="~/Sites/Timesgoesby">Timesgoesby</a>
-                        <a class="dropdown-item" href="~/Sites/Timesgoesby2">Timesgoesby2</a>
+                        <a class="dropdown-item" href="~/Sites/Timegoesby">Timegoesby</a>
+                        <a class="dropdown-item" href="~/Sites/Timegoesby2">Timegoesby2</a>
                         <a class="dropdown-item" href="~/Sites/TyöPaja">TyöPaja</a>
                         <a class="dropdown-item" href="~/Sites/VesiKivi">VesiKivi</a>
                         <a class="dropdown-item" href="~/Sites/VesiKiviPyorre">VesiKiviPyorre</a>
@@ -142,7 +234,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-</nav>
+    </nav>*@
 
     <div class="container body-content">
         @RenderBody()
@@ -157,12 +249,8 @@
     @RenderSection("scripts", required: false)
 
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>*@
+    @*<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>*@
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -3,25 +3,28 @@
     ViewBag.Title = "Talvikuvat";
 }
 
-<link href="~/Content/Kuvat.css" rel="stylesheet" />
-<link href="carousel.css" rel="stylesheet">
-<link href="~/Content/Talvikuvat.css" rel="stylesheet" />
 
-<link href="index.html" rel="index">
 
 
 @section scripts{
- <!-- Custom styles for this template -->
+
+    <link href="~/Content/Kuvat.css" rel="stylesheet" />
+    <link href="carousel.css" rel="stylesheet">
+    <link href="~/Content/Talvikuvat.css" rel="stylesheet" />
+    <link href="index.html" rel="index">
 
 
-
-<style>
-    div.background {
-        background-image: url('../../Images/jaakiteet.jpg');
-        border: 2px solid black;
-        padding-top: 200px;
-    }
     <style>
+        div.background {
+            background-image: url('../../Images/jaakiteet.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid black;
+            padding-top: 100px;
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+
         div.img {
             border: 1px solid #ccc;
         }
@@ -49,8 +52,8 @@
             float: left;
             width: 24.99999%;
         }
-</style>
-    }
+    </style>
+}
 
 <!-- WRAPPER
    ================================================== -->
@@ -152,16 +155,15 @@
 
         <!--<div style="padding:6px;">-->
         <!--This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
         <h4>Resize the browser window to see the effect.</h4>-->
         <!--TALVIKUVAT END-->
 
     </div>  <!--BACKGROUND END-->
-        </div><!-- /.wrapper END -->
+</div><!-- /.wrapper END -->
 
-<div class="container body-content">
+@*<div class="container body-content">
     <hr />
     <footer>
         <p>&copy; @DateTime.Now.Year - Johanna Merikanto - WEB sivustot</p>
     </footer>
-</div>
+</div>*@

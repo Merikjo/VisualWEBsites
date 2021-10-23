@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-3.3.1.js" />
+﻿/// <reference path="jquery-3.4.1.js" />
 /// <autosync enabled="true" />
 /// <reference path="../bootstrap-3.3.6/bootstrap-3.3.6/Gruntfile.js" />
 /// <reference path="../bootstrap-3.3.6/bootstrap-3.3.6/package.js" />

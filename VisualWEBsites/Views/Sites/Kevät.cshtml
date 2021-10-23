@@ -4,61 +4,58 @@
 }
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-<script src="http://code.jquery.com/jquery.min.js"></script>
 
 @section scripts {
-    <script src="~/Scripts/modernizr-2.8.3.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="/Scripts/bootstrap.js"></script>
-    <script src="/Scripts/respond.js"></script>
-    <script src="~/Scripts/jquery-3.1.1.js"></script>
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    @Scripts.Render("~/bundles/jqueryval")
 }
 
 @section head{
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Sectionscripts/Mysite.css" rel="stylesheet" />
-<style>
-    body {
-        background-color: rgb(232,232,232);
-    }
-    div.background {  
-        background-image: url('../../Images/kevatsoratausta.jpg');
-        border: 2px solid black;
-        /*display: block;*/
-        height: 1080px;
-        /*width: 1170px;*/
-        width:100%;
-    }
 
-    div.transbox {
-        /*margin: 5px;*/
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.4;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-        height: 1080px;
-        width: 100%;
-    }
-
-        div.transbox p {
-            margin: 49%;
-            font-weight: bold;
-            color: #000000;
-            font-size: 74px;
-            height: 1080px;
-            width: 100%;
+    <style>
+        body {
+            background-color: rgb(232,232,232);
         }
-</style>
-    }
+
+        .wrapper {
+            color: rgb(220, 220, 220); /*harmaa*/
+            width: 100%;
+            height: auto;
+            padding-top: 1%;
+        }
+
+        div.background {
+            background-image: url('../../Images/kevatsoratausta.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid black;
+            width: 100%;
+            height: 1080px;
+        }
+
+        div.transbox {
+            background-color: #ff99c2;
+            border: 1px solid black;
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
+        }
+
+            div.transbox p {
+                font-weight: bold;
+                color: #000000;
+                font-size: 74px;
+                width: 100%;
+                height: 100%;
+                padding-left: 55%;
+                padding-top: 50%;
+            }
+    </style>
+}
 
 
-    <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:0px;margin-top:10px;">
-    <!--BACKGROUND-->
+<!--BACKGROUND-->
+<div class="wrapper">
     <div class="background">
         <div class="transbox">
             <p>
@@ -68,10 +65,5 @@
                 toisin.
             </p>
         </div>
-    </div><!--BACKGROUND END-->
-</div>
-
-<script src="~/Scripts/jquery-2.2.4.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-
+    </div>
+</div><!--BACKGROUND END-->

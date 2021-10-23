@@ -1,14 +1,13 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    background-color:azure;
+﻿
+* {
+    box-sizing: border-box;
 }
 
-bodi {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    background-color: azure;
+
+body {
+
 }
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -44,13 +43,3 @@ textarea {
         font-size: 3.5rem;
     }
 }
-
-
-
-
-
-
-
-
-
-

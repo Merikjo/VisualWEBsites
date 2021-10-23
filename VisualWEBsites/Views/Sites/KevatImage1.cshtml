@@ -3,8 +3,7 @@
     ViewBag.Title = "KevatImage1";
 }
 @section scripts {
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
-    @Scripts.Render("~/bundles/jqueryval")
+
 }
 
 @section head{
@@ -12,42 +11,45 @@
     <link href="~/Content/carousel.css" rel="stylesheet" />
 
     <style>
+        body {
+            background: linear-gradient(to bottom, #99ffcc 53%, #009900 100%);
+        }
+
         div.background {
             background-image: url("../../Images/keväthaapatausta.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
             border: 2px solid black;
-            margin: 75px 10px auto;
-            /*opacity:0.9;*/
-            width: 1080px;
+            width: 100%;
             height: 1920px;
         }
 
         div.transbox {
-            margin: 5px;
             background-color: #ffffff; /*valkoinen*/
             border: 1px solid black;
             opacity: 0.5;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1065px;
-            height: 1905px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox2 {
-            margin: 5px;
             background-color: #b6d8dc; /*vaaleansininen*/
             border: 1px solid black;
             opacity: 0.8;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1052px;
-            height: 1892px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox p {
-            margin: 25%;
             font-weight: bold;
             color: #ffffff; /*valkoinen*/
             font-size: 500px;
-            width: 1035px;
-            height: 1875px;
+            width: 100%;
+            height: 100%;
+            padding-left: 15%;
+            padding-top: 50%;
         }
     </style>
 }
@@ -59,7 +61,5 @@
         <div class="transbox2">
             <p>KEVÄT</p>
         </div>
-
-        <!--<img src="~/Images/kesälaituri2014.jpg" alt="kevätpyörä" class="img-circle">-->
     </div>
 </div><!--BACKGROUND END-->

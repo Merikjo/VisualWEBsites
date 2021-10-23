@@ -3,106 +3,81 @@
     ViewBag.Title = "Ajankulua";
 }
 
-@*<script src="http://code.jquery.com/jquery.min.js"></script>*@
 
 @section scripts {
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
 
-    @Scripts.Render("~/bundles/jqueryval")
 }
 
 @section head {
     <link href="~/Content/carousel.css" rel="stylesheet" />
     <link href="~/Content/Ajankulua.css" rel="stylesheet" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: rgb(232,232,232);
-        }
-
-        .container {
-            width: 100%;
-        }
-
-        div.wrapper {
-            color: rgb(220, 220, 220); /*harmaa*/
-            margin: 0px auto;
-            background-repeat: no-repeat;
-            width: 100%;
-        }
-
-        div.background {
-            background-image: url('../../Images/jaakiteet.jpg');
-            border: 1px solid black;
-            width: 100%;
-            height: auto;
-            background-repeat: no-repeat;
-        }
-
-        div.transbox {
-            /*margin: 5px;*/
-            background-color: #ffffff;
-            border: 1px solid black;
-            opacity: 0.3;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            /*position:relative;*/
-            background-repeat: no-repeat;
-            width: 100%;
-            height: auto;
-        }
-
-            div.transbox p {
-                /*margin: 50%;*/
-                font-weight: bold;
-                color: #000000;
-                font-size: 74px;
-                /*max-height:600px;*/
-                /*display: flex;*/
-                align-content: space-around;
-                position: relative;
-                width: 100%;
-                height: auto;
-                background-repeat: no-repeat;
-            }
-
-        #myDIVaika {
-            /*border: 1px solid black;*/
-            -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
-            animation: mymove 10s infinite;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: auto;
-        }
-
-        div.transbox p {
-            /*margin: 50%;*/
-            font-weight: bold;
-            color: #000000;
-            font-size: 74px;
-            /*display: flex;*/
-            align-content: space-around;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: auto;
-        }
-    </style>
 }
+<style>
+    body {
+        background-color: #ecf2f9;
+    }
+
+    div.wrapper {
+        color: rgb(220, 220, 220); /*harmaa*/
+        margin: 0px auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+
+    div.background {
+        background-image: url('../../Images/jaakiteet.jpg');
+      /*  border: 1px solid black;*/
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+
+    div.transbox {
+        background-color: #ffffff;
+        opacity: 0.3;
+        /*position:relative;*/
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+
+    div.transbox p {
+        font-weight: bold;
+        /*color: #000000;*/
+        font-size: 74px;
+        /*display: flex;*/
+        align-content: space-around;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+
+    #myDIVaika {
+        -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+        animation: mymove 10s infinite;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+</style>
+
 
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:0px;margin-top:20px;">
-
+  
     <!-- Header -->
-    <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fa fa-dashboard"></i> </b></h5>
-    </header>
+    <!--<header class="w3-container" style="padding-top: 22px; font-weight: bold;">
+        <h5><b><i class="fa fa-dashboard"></i> </b>TALVI</h5>
+    </header>-->
 
     <!-- WRAPPER
     ================================================== -->
     <div class="wrapper">
         <div class="background">
             <div class="transbox">
-
                 <div id="myDIVaika" Style="font-size: 36px;">
                     Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
                     Talvi   Kevät   Kesä   Syksy   Talvi      Kevät   Kesä   Syksy   Talvi   Kevät   Kesä   Syksy
@@ -118,14 +93,12 @@
                     Talvi     Kevät      Kesä      Syksy       Talvi         Kevät      Kesä   Syksy      Talvi    Kevät      Kesä   Syksy
                     Talvi          Kevät   Kesä   Syksy   Talvi      Kevät   Kesä     Syksy   Talvi          Kevät   Kesä   Syksy
                     Talvi     Kevät     Kesä   Syksy     Talvi   Kevät     Kesä   Syksy     Talvi   Kevät     Kesä      Syksy
-                    @*<div id="div1">Talvi Kevät></div>*@
+                    <p Style="font-size: 60px; margin-bottom: 10px;">TALVI KEVÄT KESÄ SYKSY</p>
                 </div>
             </div><!-- /.transbox END -->
         </div><!-- /.background END -->
     </div><!-- /.wrapper END -->
 </div>
 
-<script src="~/Scripts/jquery-2.2.4.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
 

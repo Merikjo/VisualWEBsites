@@ -3,57 +3,64 @@
 }
 
 @section scripts {
-<script src="~/Scripts/jquery-2.2.4.js"></script>
 
-@Scripts.Render("~/bundles/jqueryval")
 }
 
 @section head{
 
     <link href="~/Content/carousel.css" rel="stylesheet" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
+   
     <style>
+        div.wrapper {
+            color: rgb(220, 220, 220); /*harmaa*/
+            width: 100%;
+        }
+
         div.background {
             background-image: url('../../Images/hiekka.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             border: 2px solid black;
-            width: 1170px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox {
-            margin: 5px;
             background-color: #ffffff;
             border: 1px solid black;
             opacity: 0.5;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1155px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox2 {
-            margin: 5px;
             background-color: #b6d8dc;
             border: 1px solid black;
             opacity: 0.9;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            width: 1142px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox p {
-            margin: 25%;
+            margin: 20%;
             font-weight: bold;
             color: #ffffff;
             font-size: 500px;
-            width: 1125px;
-            padding-left: 2px;
-            padding-right: 2px;
+            width: 100%;
         }
     </style>
 }
 
 <!--BACKGROUND-->
-<div class="background">
-    <div class="transbox">
-        <div class="transbox2">
-            <p>KESÄ</p>
+<div class="wrapper">
+    <div class="background">
+        <div class="transbox">
+            <div class="transbox2">
+                <p>KESÄ</p>
+            </div>
         </div>
     </div>
 </div><!--BACKGROUND END-->

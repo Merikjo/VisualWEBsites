@@ -78,6 +78,7 @@ wbody {
     -webkit-animation: mymove7 480s linear infinite; /* Chrome, Safari, Opera */
     -moz-animation: mymove7 480s linear infinite;
 }
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove7 {
     100% {
@@ -178,8 +179,8 @@ divRotate {
     animation-timing-function: linear;
     /*transform-origin: 50% 50%;*/
     animation: mymove9 480s linear infinite;
-    -webkit-animation: mymove8 480s linear infinite; /* Chrome, Safari, Opera */
-    -moz-animation: mymove8 480s linear infinite;
+    -webkit-animation: mymove9 480s linear infinite; /* Chrome, Safari, Opera */
+    -moz-animation: mymove9 480s linear infinite;
     font-size: 100px;
     font-family: Verdana;
 }
@@ -188,6 +189,7 @@ divRotate {
 @-webkit-keyframes mymove9 {
     50% {
         -webkit-transform: rotate(14400deg);
+        opacity: 0.9;
     }
 }
 
@@ -195,6 +197,7 @@ divRotate {
 @keyframes mymove9 {
     50% {
         -webkit-transform: rotate(14400deg);
+        opacity: 0.9;
     }
 }
 

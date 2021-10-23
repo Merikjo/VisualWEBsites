@@ -4,12 +4,7 @@
 }
 
 @section scripts {
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
 
-    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>*@
-    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
-
-    @Scripts.Render("~/bundles/jqueryval")
 }
 
 @section head{
@@ -21,59 +16,48 @@
             background-color: rgb(39,43,62);
         }
 
+        div.wrapper {
+            color: rgb(220, 220, 220); /*harmaa*/
+            width: 100%;
+            height: auto;
+        }
+
         div.background {
             background-image: url('../../Images/jääpeilipysty.jpg');
             background-repeat: no-repeat;
-            /*border: 2px solid black;*/
-            /*margin: 50px;*/
-            /*width: 1080px;*/
             height: 1920px;
             width: 100%;
         }
 
         div.transbox {
-            /*margin: 5px;*/
             background-color: rgb(39,43,62); /*musta*/
-            /*border: 1px solid black;*/
             opacity: 0.7;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            /*width: 1080px;*/
             height: 1920px;
             width: 100%;
         }
 
         div.transbox2 {
-            /*margin: 5px;*/
             background-color: rgb(39,43,62); /*musta*/
-            /*border: 1px solid black;*/
             opacity: 0.9;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            /*width: 1080px;*/
             height: 1920px;
             width: 100%;
         }
 
         div.transbox p {
-            /*margin-left: 45%;*/
-            /*margin-top: 50%;*/
             font-weight: bold;
             color: rgb(39,43,62);
-            /*color: #ffffff;*/
             font-size: 200px;
-            /*width: 1080px;*/
             height: 1920px;
             width: 100%;
         }
 
         div.pallot {
-            /*margin-top: 5%;*/
             opacity: 0.8;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
             text-align: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
-        div.col-sm-4 {
+        div.col-sm-3 {
             margin-top: 5%;
             text-align: center;
             width: 100%;
@@ -104,7 +88,7 @@
     </header>
 
     <!--BACKGROUND-->
-    <div class="w3-container">
+    <div class="wrapper">
         <div class="background">
             <div class="transbox">
                 <div class="transbox2">
@@ -117,7 +101,7 @@
                                     <div class="w3-display-middle w3-myfont">HELLO</div>
                                 </div>
                             </div>
-                        </div><!-- /.col-lg-3 -->
+                        </div>
 
                         <div class="col-sm-3">
                             <div id="myDIVpyorre4">
@@ -126,7 +110,7 @@
                                     <div class="w3-display-middle w3-myfont">HELLO</div>
                                 </div>
                             </div>
-                        </div><!-- /.col-lg-3 -->
+                        </div>
 
                         <div class="col-sm-3">
                             <div id="myDIVpyorre4">
@@ -135,7 +119,7 @@
                                     <div class="w3-display-middle w3-myfont">HELLO</div>
                                 </div>
                             </div>
-                        </div><!-- /.col-lg-4 -->
+                        </div>
 
                         <div class="col-sm-3">
                             <div id="myDIVpyorre4">
@@ -144,7 +128,7 @@
                                     <div class="w3-display-middle w3-myfont">HELLO</div>
                                 </div>
                             </div>
-                        </div><!-- /.col-lg-3 -->
+                        </div>
 
                         <div class="clearfix"></div>
 

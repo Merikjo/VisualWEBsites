@@ -4,63 +4,70 @@
 }
 
 @section scripts {
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
-    @Scripts.Render("~/bundles/jqueryval")
+  
 }
 
 @section head{
     <style>
+        .wrapper {
+            color: rgb(220, 220, 220); /*harmaa*/
+            width: 100%;
+            height: auto;
+            padding-top: 1%;
+        }
+
         div.background {
             background-image: url('../../Images/ketju.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 2px solid black;
-            margin: 0px;
+            width: 100%;
             height: 658px;
-            width: 1170px;
+    
         }
 
         div.transbox {
-            margin: 5px;
             background-color: #ffffff;
             border: 1px solid black;
             opacity: 0.5;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            height: 643px;
-            width: 1155px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox2 {
-            margin: 5px;
             background-color: #b6d8dc;
             border: 1px solid black;
             opacity: 0.8;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            height: 630px;
-            width: 1142px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 8px 8px 8px;
         }
 
         div.transbox p {
-            margin-left: 70%;
-            margin-top: 10%;
             font-weight: bold;
             color: #ffffff;
-            font-size: 75px;
-            height: 613px;
-            width: 1125px;
+            font-size: 100px;
+            width: 100%;
+            height: 100%;
+            padding-left: 55%;
+            padding-top: 3%;
         }
     </style>
 }
 
 <!--BACKGROUND-->
-<div class="background">
-    <div class="transbox">
-        <div class="transbox2">
-            <p>
-                Talvi<br />
-                Kevät<br />
-                Kesä<br />
-                Syksy
-            </p>
-
+<div class="wrapper">
+    <div class="background">
+        <div class="transbox">
+            <div class="transbox2">
+                <p>
+                    Talvi<br />
+                    Kevät<br />
+                    Kesä<br />
+                    Syksy
+                </p>
+            </div>
         </div>
     </div>
 </div><!--BACKGROUND END-->

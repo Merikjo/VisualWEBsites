@@ -6,13 +6,11 @@
 
 
 @section scripts {
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
-    @Scripts.Render("~/bundles/jqueryval")
+
 }
 
 
 @section head{
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Mysite.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
@@ -21,33 +19,46 @@
             background-color: rgb(232,232,232);
         }
 
+        div.wrapper {
+            color: rgb(220, 220, 220); /*harmaa*/
+            margin: 0px auto;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+        }
+
         div.background {
             background-image: url('../../Images/juhannusruusu.jpg');
             background-repeat: no-repeat;
             border: 2px solid black;
-            height: 2247px;
+            height: auto;
             width: 100%;
         }
 
         div.transbox {
-            /*margin: 5px;*/
             background-color: #ffffff;
-            border: 1px solid black;
             opacity: 0.6;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-            height: 2247px;
+            height: auto;
             width: 100%;
         }
 
-            div.transbox p {
-                margin: 40%;
-                margin-top: 100%;
-                font-weight: bold;
-                color: #000000;
-                font-size: 100px;
-                height: 2247px;
-                width: 100%;
-            }
+        div.transbox2 {
+            background-color: #d6d6c2;
+            opacity: 0.8;
+            width: 100%;
+            height: auto;
+        }
+
+        div.transbox p {
+            font-weight: bold;
+            color: #000000;
+            font-size: 100px;
+            height: auto;
+            width: 100%;
+            padding: 200px;
+            margin-left: 25%;
+          
+        }
     </style>
 }
 
@@ -59,15 +70,14 @@
     <div class="wrapper">
         <div class="background">
             <div class="transbox">
-                <p>
-                    Kesä tuoksuu<br />
-                    ruusulta.
-                </p>
+                <div class="transbox2">
+                    <p>
+                        Kesä tuoksuu<br />
+                        ruusulta.
+                    </p>
+                </div>
             </div>
         </div>
     </div><!-- /.wrappwer END -->
 </div>
 
-<script src="~/Scripts/jquery-2.2.4.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>

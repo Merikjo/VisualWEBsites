@@ -3,15 +3,14 @@
     ViewBag.Title = "JaaPyorre";
 }
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-
 @section scripts {
-    <script src="~/Scripts/jquery-2.2.4.js"></script>
-   
-    @Scripts.Render("~/bundles/jqueryval")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 }
 
 @section head{
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="~/Content/Mysite.css" rel="stylesheet" />
 
     <style>
@@ -21,172 +20,321 @@
 
         div.background {
             background-image: url('../../Images/jääpysty.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             border: 1px solid black;
             width: 100%;
-            height:100%;
-            /*height: 2304px;*/
+            height: 1300px;
         }
 
         div.transbox {
             background-color: #ffffff;
-            /*border: 1px solid black;*/
             opacity: 0.5;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
             width: 100%;
             height: 100%;
-            /*height: 2304px;*/
+            text-align: center;
         }
 
         div.transbox2 {
             background-color: #b6d8dc; /*t.harmaa*/
-            /*border: 1px solid black;*/
             opacity: 0.8;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
             width: 100%;
-            /*height: 100%;*/
-            height: 2304px;
+            height: 100%; 
         }
 
         .transbox p {
-            /*margin-left: 5%;
-            margin-top: 5%;*/
+            padding-left: 5%;
+            padding-top: 5%;
             font-weight: bold;
             color: #393737;
             font-size: 100px;
             width: 100%;
-            /*height: 100%;*/
-            height: 2304px;
         }
 
         .pallot {
-            /*margin-top: 5%;*/
             opacity: 0.9;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
             text-align: center;
         }
 
-        .col-sm-4 {
-            margin-top: 5%;
-            margin-left: 10%;
-            margin-bottom: 5%;
+        .col-sm-3 {
             text-align: center;
         }
 
         div.teksti {
-            position: absolute; /*rivittää tekstin ruutuun*/
-            /*width: 100%; */
-            font-size: 60px;
+            /*position: absolute;*/ /*rivittää tekstin ruutuun*/
+            font-size: 40px;
             font-weight: bold;
-            padding-left: 5%;
-            text-align: justify;
+            text-align: center;
+        }
+        div.teksti2 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
         }
 
         .img-circle {
-            border-radius: 100%;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
         }
     </style>
 }
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:0px;margin-top:20px;">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-top:5px;">
 
-        <!-- Header -->
-        <header class="w3-container" style="padding-top:22px">
-            <h5><b><i class="fa fa-dashboard"></i> </b></h5>
-        </header>
+    <!--BACKGROUND-->
+        <div class="background">
+            <div class="transbox">
+                <div class="transbox2">
 
-        <!--BACKGROUND-->
-        <div class="w3-container">
-            <div class="background">
-                <div class="transbox">
-                    <div class="transbox2">
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre">
-                                <a href="#" target="_blank"><text>ICE</text><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="150" height="150"></a>
-                            </div>
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
                         </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre1">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="100" height="100"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre2">
-                                <a href="#" target="_blank"><text>ICE</text><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="50" height="50"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre1">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="200" height="200"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="80" height="80"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre1">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="70" height="70"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre2">
-                                <a href="#" target="_blank"><text>ICE</text><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="50" height="50"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre1">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="200" height="200"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre2">
-                                <a href="#" target="_blank"><text>ICE</text><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="150" height="150"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="100" height="100"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="teksti">ICE</div>
-                            <div id="myDIVpyorre1">
-                                <a href="#" target="_blank"><img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton" width="80" height="80"></a>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="teksti">ICE</div>
+                        <div id="myDIVpyorre">
+                            <div class="teksti2">ICE</div>
+                            <img class="img-circle" src="~/Images/jääpeilipysty.jpg" alt="vesibutton">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+
+
                 </div>
-            </div><!--BACKGROUND END-->
-        </div>
+            </div>
+        </div><!--BACKGROUND END-->
     </div>
 
-    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+
 
 
 
