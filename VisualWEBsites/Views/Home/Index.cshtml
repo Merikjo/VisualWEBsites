@@ -5,6 +5,10 @@
 @section scripts {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 }
 
 @section head{
@@ -27,6 +31,14 @@
             margin-top: 5px;
             margin-bottom: 5px;
         }
+
+        body {
+           /* font-family: "Lato", sans-serif*/
+        }
+
+        .mySlides {
+            display: none
+        }
     </style>
 }
 
@@ -39,75 +51,39 @@
             ================================================== -->
             <div class="container">
 
-                <!-- Carousel
-                ================================================== -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                    </ol>
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="bd-placeholder-img" role="img" src="~/Images/Talvenkajo.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
-                            <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h1>Talvimaisemia</h1>
-                                    <p>Rentoudu ja nauti näistä upeista talvimaisemista.</p>
-                                    <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
-                                    <p><a class="btn btn-lg btn-primary" role="button" href="~/Views/Sites/Talvikuvat.cshtml" target="_blank">Talvikuvia</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item carousel-item-left">
-                            <img class="bd-placeholder-img" role="img" src="~/Images/kevät2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>Kevätmaisemia</h1>
-                                    <p>Alkukeväästä luonto kuoriutuu talvivaipastaan. Luonto on paljas ja karu, syli täynnä kesän odotusta. </p>
-                                    <p><a class="btn btn-lg btn-primary" href="KevätHeijaste.html" target="_blank" role="button">Kevätkuvia</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item carousel-item-next carousel-item-left">
-                            <img class="bd-placeholder-img" role="img" src="~/Images/kesälaituri.jpg" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>Kesämaisemia</h1>
-                                    <p>Kesällä päivänpaiste hellii luontoa. Niityt viheriöivät, kukat puhkeavat loistoonsa ja linnut konseroivat moniäänisesti.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="Index3.html" target="_blank" role="button">Kesäkuvia</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item carousel-item-next carousel-item-left">
-                            <img class="bd-placeholder-img" role="img" src="~/Images/syksy2.jpg" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" />
-                            <div class="container">
-                                <div class="carousel-caption text-right">
-                                    <h1>Syksymaisemia</h1>
-                                    <p>Syksyllä herää odotuksen kaipuu menneeseen ja tulevaan kesään.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="Syksykuvat.html" target="_blank" role="button">Syksykuvia</a></p>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Automatic Slideshow Images -->
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="~/Images/Talvenkajo.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Talvimaisemia</h3>
+                        <p><b>Rentoudu ja nauti näistä upeista talvimaisemista.</b></p>
                     </div>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div><!-- /.carouselEND -->
-                <!-- Marketing messaging and featurettes
-                ================================================== -->
-                <!-- Wrap the rest of the page in another container to center all the content. -->
+                </div>
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="~/Images/kevät2.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Kevätmaisemia</h3>
+                        <p><b>Alkukeväästä luonto kuoriutuu talvivaipastaan. Luonto on paljas ja karu, syli täynnä kesän odotusta.</b></p>
+                    </div>
+                </div>
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="~/Images/kesälaituri.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Kesämaisemia</h3>
+                        <p><b>Kesällä päivänpaiste hellii luontoa. Niityt viheriöivät, kukat puhkeavat loistoonsa ja linnut konseroivat moniäänisesti.</b></p>
+                    </div>
+                </div>
+
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="~/Images/syksy2.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Kesämaisemia</h3>
+                        <p><b>Syksyllä herää odotuksen kaipuu menneeseen ja tulevaan kesään.</b></p>
+                    </div>
+                </div>
+
+          
 
                 <div class="container marketing">
                     <!-- Four columns of text below the carousel -->
@@ -140,7 +116,8 @@
                             <p><a class="btn btn-default" href="index1.html" target="_blank" role="button">Talvikuvia &raquo;</a></p>
                         </div><!-- /.col-lg-3 -->
                     </div><!-- /.row -->
-                    <!-- START THE FEATURETTES -->
+                    
+    <!-- START THE FEATURETTES -->
 
                     <hr class="featurette-divider">
 
@@ -180,7 +157,8 @@
 
                     <hr class="featurette-divider">
                     <!-- /END THE FEATURETTES -->
-                    <!-- FOOTER -->
+                    
+    <!-- FOOTER -->
                     <footer>
                         <p class="pull-right"><a href="#">Takaisin ylös</a></p>
                     </footer><!-- FOOTER END -->
@@ -191,3 +169,40 @@
     </main>
 
 </body>
+
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

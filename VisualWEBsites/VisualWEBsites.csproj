@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.Net.Compilers.3.11.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.11.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.4.0.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.4.0.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -198,14 +198,24 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\bootstraplux.css" />
     <Content Include="Content\bootstraplux.min.css" />
+    <Content Include="Content\Butonright.css" />
+    <Content Include="Content\Buttondown.css" />
+    <Content Include="Content\Hauras.css" />
+    <Content Include="Images\5922a2_35f7f9e3c9b84d6d9900faa5a5acbf9f_mv2.gif" />
+    <Content Include="Images\5922a2_79432fe7571f4b3086ad0748ce65840c_mv2.gif" />
+    <Content Include="Images\5922a2_f9540c58ae71425a9b067cb6ce96ead0_mv2.gif" />
     <Content Include="Images\Greywood.jpg" />
     <Content Include="Images\haituvapallo2.jpg" />
     <Content Include="Images\ikkuna3.jpg" />
+    <Content Include="Images\Kesä.txt" />
+    <Content Include="Images\Lehti.jpg" />
     <Content Include="Images\Pearl.jpg" />
     <Content Include="Images\Pearl.png" />
     <Content Include="Images\pilvipuna2.jpg" />
     <Content Include="Images\pilvipunarengas.png" />
+    <Content Include="Images\Punapilvet.jpg" />
     <Content Include="Images\Ratasopacity.png" />
+    <Content Include="Images\Sirkkeli.jpg" />
     <Content Include="Images\Sirkkeli.png" />
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -225,6 +235,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Properties\PublishProfiles\VisualWEBsitesByjm - Web Deploy.pubxml" />
+    <Content Include="Images\Syyskaislat.jpg" />
+    <Content Include="Images\Syyspuutrajattu.png" />
+    <Content Include="Images\vaakaketju.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -670,7 +683,13 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <Content Include="Views\Sites\ButtOnRight.cshtml" />
+    <Content Include="Views\Sites\ButtOnDown.cshtml" />
+    <Content Include="Views\Sites\ButtOnDownUp.cshtml" />
+    <Content Include="Views\Sites\Aikavuosi.cshtml" />
     <None Include="Views\Sites\JääKidePyorre.cshtml" />
+    <Content Include="Views\Sites\RatasMove.cshtml" />
+    <Content Include="Views\Sites\Hauras.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -721,7 +740,7 @@
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.11.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.11.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.4.0.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.4.0.1\build\Microsoft.Net.Compilers.props'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />

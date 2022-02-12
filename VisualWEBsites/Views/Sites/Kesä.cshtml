@@ -21,24 +21,23 @@
 
         div.wrapper {
             color: rgb(220, 220, 220); /*harmaa*/
-            margin: 0px auto;
-            background-repeat: no-repeat;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
 
         div.background {
             background-image: url('../../Images/juhannusruusu.jpg');
             background-repeat: no-repeat;
+            background-size: cover;
             border: 2px solid black;
-            height: auto;
+            height: 1000px;
             width: 100%;
         }
 
         div.transbox {
             background-color: #ffffff;
             opacity: 0.6;
-            height: auto;
+            height: 100%;
             width: 100%;
         }
 
@@ -46,38 +45,50 @@
             background-color: #d6d6c2;
             opacity: 0.8;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
 
         div.transbox p {
             font-weight: bold;
             color: #000000;
             font-size: 100px;
-            height: auto;
             width: 100%;
-            padding: 200px;
-            margin-left: 25%;
-          
+            padding-top: 600px;
+            padding-left: 45%;
         }
     </style>
 }
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:0px;margin-top:10px;">
-    <!-- WRAPPER
-    ================================================== -->
 
-    <div class="wrapper">
-        <div class="background">
-            <div class="transbox">
-                <div class="transbox2">
-                    <p>
-                        Kesä tuoksuu<br />
-                        ruusulta.
-                    </p>
-                </div>
+
+<!-- !PAGE CONTENT! -->
+@*<div class="w3-main" style="margin-top:10px;">*@
+<!-- WRAPPER
+================================================== -->
+
+<div class="wrapper">
+    <div class="background">
+        <div class="transbox">
+            <div class="transbox2">
+                <p id="demo">
+                    Kesä tuoksuu<br />
+                    ruusulta.
+                </p>
             </div>
         </div>
-    </div><!-- /.wrappwer END -->
-</div>
+    </div>
+</div><!-- /.wrappwer END -->
+@*</div>*@
 
+
+
+<script>
+    getText("D:\VisualStudio2017\VisualWEBsites\VisualWEBsites\Images\Kesä.txt");
+    
+
+async function getText(file) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  document.getElementById("demo").innerHTML = myText;
+}
+</script>

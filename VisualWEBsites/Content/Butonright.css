@@ -1,0 +1,12 @@
+﻿body {
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+    }
+}

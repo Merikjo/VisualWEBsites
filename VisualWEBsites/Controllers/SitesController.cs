@@ -14,19 +14,18 @@ namespace VisualWEBsites.Controllers
             return View();
         }
 
-        // GET: Talvi
         public ActionResult Talvi()
         {
             return View();
         }
 
-        // GET: Sivu2
+  
         public ActionResult Kevät()
         {
             return View();
         }
 
-        // GET: Sivu3
+      
         public ActionResult Kesä()
         {
             return View();
@@ -306,7 +305,39 @@ namespace VisualWEBsites.Controllers
         {
             return View();
         }
-      
+
+        public ActionResult RatasMove()
+        {
+            return View();
+        }
+
+        public ActionResult ButtOnRight()
+        {
+            return View();
+        }
+
+        public ActionResult ButtOnDown()
+        {
+            return View();
+        }
+
+        public ActionResult ButtOnDownUp()
+        {
+            return View();
+        }
+
+        public ActionResult Aikavuosi()
+        {
+            return View();
+        }
+
+        public ActionResult Hauras()
+        {
+            return View();
+        }
+
+
+
     }
 }
     

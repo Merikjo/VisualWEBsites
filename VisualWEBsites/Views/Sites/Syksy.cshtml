@@ -9,8 +9,12 @@
 }
 
 @section head{
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    @*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">*@
     <link href="~/Content/Syksynväreilyä.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -25,7 +29,7 @@
             /*overflow: auto;*/
             height: 674px;
             width: 100%;
-            margin-top: 30px;
+            margin-top: 50px;
             padding: 8px 8px 8px 8px;
         }
 
@@ -39,8 +43,8 @@
         }
 
         div.transbox p {
-            margin-left: 50%;
-            margin-top: 30%;
+            padding-left: 50%;
+            padding-top: 30%;
             font-weight: bold;
             color: #000000;
             font-size: 74px;
@@ -48,6 +52,7 @@
             -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
             animation: mymove 5s infinite;
             width: 100%;
+            font-family: 'Shadows Into Light', cursive;
         }
     </style>
 }
